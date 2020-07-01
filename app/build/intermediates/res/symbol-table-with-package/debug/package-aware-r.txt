@@ -1224,6 +1224,7 @@ font lato_regular
 font titan_one
 id ALT
 id CTRL
+id DetailsTitle
 id Email
 id FUNCTION
 id GroupImage
@@ -1382,7 +1383,6 @@ id fill_horizontal
 id fill_vertical
 id filled
 id find_activities
-id find_activities2
 id fixed
 id forever
 id ghost_view
@@ -1553,7 +1553,6 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView10
-id textView11
 id textView12
 id textView13
 id textView3
@@ -1692,7 +1691,6 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout message
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

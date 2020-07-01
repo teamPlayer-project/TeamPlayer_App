@@ -5,8 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
 tools:context=".requestItem"
-android:padding="8dp" android:layout_marginBottom="6dp"
-    >
+android:padding="8dp" android:layout_marginBottom="6dp">
 
 
     <TextView
@@ -19,9 +18,9 @@ android:padding="8dp" android:layout_marginBottom="6dp"
         android:background="@drawable/messagesend"
         android:maxWidth="240dp"
         android:padding="8dp"
-        android:textSize="18dp"
+        android:paddingBottom="2dp"
         android:textColor="@android:color/background_dark"
-        android:paddingBottom="2dp"/>
+        android:textSize="18dp" />
 
 <TextView
     android:id="@+id/text_message_time"

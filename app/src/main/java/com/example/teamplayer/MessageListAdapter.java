@@ -42,10 +42,8 @@ public class MessageListAdapter  extends ArrayAdapter<message_item> {
     List<message_item> messagetList;
     //private String email;
     private FirebaseAuth mAuth;
-
     private static final String TAG = "accept_request";
     private static final String ACTIVITIES_COLLECTION = "Activities/";
-
     //activity context
     Context context;
     int resource;
@@ -68,36 +66,27 @@ public class MessageListAdapter  extends ArrayAdapter<message_item> {
     @NonNull
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-
-
         message_item messageItem = messagetList.get(position);
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         View view;
-
         //Check if current user is the message sender
         if (messageItem.is_sender){
-
             //Set message to sender layout
             view = layoutInflater.inflate(R.layout.send_message, null, false);
             TextView message = view.findViewById(R.id.text_message_body);
             TextView time = view.findViewById(R.id.text_message_time);
             message.setText(messageItem.message);
             time.setText(messageItem.time);
-
         }else {
             //Set message to receive layout
-
             view = layoutInflater.inflate(resource, null, false);
-
             TextView Name = view.findViewById(R.id.text_message_name);
             TextView message = view.findViewById(R.id.text_message_body);
             TextView time = view.findViewById(R.id.text_message_time);
-
             Name.setText(messageItem.sender);
             message.setText(messageItem.message);
             time.setText(messageItem.time);
         }
-
         return view;
     }
 }
