@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.teamplayer"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.project.teamplayer"
+    android:versionCode="2"
+    android:versionName="2.0" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -13,10 +13,10 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
     <permission
-        android:name="com.example.teamplayer.permission.C2D_MESSAGE"
+        android:name="com.project.teamplayer.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.teamplayer.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.project.teamplayer.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <!--
@@ -49,65 +49,66 @@
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
-        android:name="com.example.teamplayer.ApplicationClass"
+        android:name="com.project.teamplayer.ApplicationClass"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:layoutDirection="ltr"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.teamplayer.no_activities1"
-            android:parentActivityName="com.example.teamplayer.select_action" />
-        <activity android:name="com.example.teamplayer.no_requests" />
-        <activity android:name="com.example.teamplayer.edit_activity" />
-        <activity android:name="com.example.teamplayer.participants_Items" />
+            android:name="com.project.teamplayer.no_activities1"
+            android:parentActivityName="com.project.teamplayer.select_action" />
+        <activity android:name="com.project.teamplayer.no_requests" />
+        <activity android:name="com.project.teamplayer.edit_activity" />
+        <activity android:name="com.project.teamplayer.participants_Items" />
         <activity
-            android:name="com.example.teamplayer.requestItem"
+            android:name="com.project.teamplayer.requestItem"
             android:label="@string/title_activity_request_item"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.teamplayer.activity_details"
+            android:name="com.project.teamplayer.activity_details"
             android:label="@string/title_activity_details"
             android:theme="@style/AppTheme" />
-        <activity android:name="com.example.teamplayer.sport_type" />
-        <activity android:name="com.example.teamplayer.city" />
-        <activity android:name="com.example.teamplayer.age_range" />
+        <activity android:name="com.project.teamplayer.sport_type" />
+        <activity android:name="com.project.teamplayer.city" />
+        <activity android:name="com.project.teamplayer.age_range" />
         <activity
-            android:name="com.example.teamplayer.registration"
-            android:parentActivityName="com.example.teamplayer.activity_Login" />
+            android:name="com.project.teamplayer.registration"
+            android:parentActivityName="com.project.teamplayer.activity_Login" />
         <activity
-            android:name="com.example.teamplayer.activity_Search"
-            android:parentActivityName="com.example.teamplayer.select_action" />
+            android:name="com.project.teamplayer.activity_Search"
+            android:parentActivityName="com.project.teamplayer.select_action" />
         <activity
-            android:name="com.example.teamplayer.activity_create_new"
-            android:parentActivityName="com.example.teamplayer.select_action" />
+            android:name="com.project.teamplayer.activity_create_new"
+            android:parentActivityName="com.project.teamplayer.select_action" />
         <activity
-            android:name="com.example.teamplayer.user_activities"
-            android:parentActivityName="com.example.teamplayer.select_action" />
+            android:name="com.project.teamplayer.user_activities"
+            android:parentActivityName="com.project.teamplayer.select_action" />
         <activity
-            android:name="com.example.teamplayer.manager"
-            android:parentActivityName="com.example.teamplayer.select_action" />
+            android:name="com.project.teamplayer.manager"
+            android:parentActivityName="com.project.teamplayer.select_action" />
         <activity
-            android:name="com.example.teamplayer.group"
-            android:parentActivityName="com.example.teamplayer.select_action" />
+            android:name="com.project.teamplayer.group"
+            android:parentActivityName="com.project.teamplayer.select_action" />
         <activity
-            android:name="com.example.teamplayer.select_action"
-            android:parentActivityName="com.example.teamplayer.activity_Login" />
+            android:name="com.project.teamplayer.select_action"
+            android:parentActivityName="com.project.teamplayer.activity_Login" />
         <activity
-            android:name="com.example.teamplayer.search_result"
-            android:parentActivityName="com.example.teamplayer.activity_Search" />
+            android:name="com.project.teamplayer.search_result"
+            android:parentActivityName="com.project.teamplayer.activity_Search" />
         <activity
-            android:name="com.example.teamplayer.requests"
-            android:parentActivityName="com.example.teamplayer.manager" />
+            android:name="com.project.teamplayer.requests"
+            android:parentActivityName="com.project.teamplayer.manager" />
         <activity
-            android:name="com.example.teamplayer.no_result"
-            android:parentActivityName="com.example.teamplayer.activity_Search" />
-        <activity android:name="com.example.teamplayer.chat" />
-        <activity android:name="com.example.teamplayer.activity_Login" >
+            android:name="com.project.teamplayer.no_result"
+            android:parentActivityName="com.project.teamplayer.activity_Search" />
+        <activity android:name="com.project.teamplayer.chat" />
+        <activity android:name="com.project.teamplayer.activity_Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -166,7 +167,7 @@
             <intent-filter android:priority="999" >
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="com.example.teamplayer" />
+                <category android:name="com.project.teamplayer" />
             </intent-filter>
         </receiver>
         <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
@@ -274,7 +275,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.teamplayer.firebaseinitprovider"
+            android:authorities="com.project.teamplayer.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
