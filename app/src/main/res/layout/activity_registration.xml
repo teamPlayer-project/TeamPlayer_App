@@ -150,12 +150,13 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="119dp"
-            android:layout_height="69dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginTop="280dp"
             android:fontFamily="@font/lato_regular"
-            android:text="Confirm password"
+            android:gravity="start"
+            android:text="Confirm \npassword:"
             android:textColor="#273272"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -163,27 +164,27 @@
 
         <TextView
             android:id="@+id/age_text_view"
-            android:layout_width="146dp"
-            android:layout_height="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="372dp"
             android:fontFamily="@font/lato_regular"
             android:text="Date Of Birth"
             android:textColor="#273272"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6"
-            app:layout_constraintVertical_bias="0.102" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <TextView
             android:id="@+id/select_date"
-            android:layout_width="150dp"
-            android:layout_height="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="372dp"
             android:layout_marginEnd="60dp"
             android:gravity="center"
             android:text="select a date"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

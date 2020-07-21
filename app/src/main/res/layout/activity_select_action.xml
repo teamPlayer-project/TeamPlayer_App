@@ -93,8 +93,10 @@
 
         <TextView
             android:id="@+id/welcomeText"
-            android:layout_width="280dp"
-            android:layout_height="85dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="56dp"
             android:background="@null"
             android:fontFamily="@font/lato_regular"
@@ -103,8 +105,6 @@
             android:textColor="#012d8c"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/profile_image"
             app:layout_constraintTop_toTopOf="parent" />
 

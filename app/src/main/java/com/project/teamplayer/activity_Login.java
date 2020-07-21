@@ -4,6 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
@@ -38,8 +41,25 @@ public class activity_Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         intent=new Intent(this,select_action.class);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        final AlertDialog dialog;
         if (user != null) {
-            startActivity(intent);
+            if(user.isEmailVerified()){
+                startActivity(intent);
+            }else {
+                user.delete();
+                final AlertDialog.Builder builder = new AlertDialog.Builder(activity_Login.this);
+                builder.setTitle("Registration wasn't completed").setMessage("Click OK to re-register");
+                builder.setCancelable(false);
+                builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        goBackRegistration();
+                    }
+                });
+
+                dialog = builder.create();
+                dialog.show();
+            }
+
         }
         mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
@@ -163,5 +183,11 @@ public class activity_Login extends AppCompatActivity {
         Intent intent=new Intent(this,registration.class);
         startActivity(intent);
     }
+
+    public void goBackRegistration() {
+        Intent intent=new Intent(this,registration.class);
+        startActivity(intent);
+    }
+
 
 }
