@@ -204,5 +204,9 @@ public class select_action extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void map(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
 
 }

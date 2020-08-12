@@ -704,6 +704,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1128,6 +1129,7 @@ drawable ic_delete
 drawable ic_group_no_image
 drawable ic_info
 drawable ic_launcher_background
+drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1143,6 +1145,7 @@ drawable image_circle
 drawable little_screen
 drawable little_screen_upsidedown_reg
 drawable login
+drawable logotransparent
 drawable look_for
 drawable messagesend
 drawable mtrl_snackbar_background

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\b53c71eec0322f7ba99a511d928f063a\\res\\anim\\design_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_out.xml.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\b53c71eec0322f7ba99a511d928f063a\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -22,6 +22,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\b53c71eec0322f7ba99a511d928f063a\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_place_autocomplete_fragment.xml.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\layout-v21\\place_autocomplete_fragment.xml"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_participants__items.xml.flat",
@@ -68,12 +72,12 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\c2d270eca5ea99a3935b8269a111c23f\\res\\anim\\onesignal_fade_out.xml"
     },
     {
-        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\b53c71eec0322f7ba99a511d928f063a\\res\\anim\\design_bottom_sheet_slide_in.xml"
-    },
-    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_send_black_24dp.png.flat",
         "source": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_send_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\b53c71eec0322f7ba99a511d928f063a\\res\\anim\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -110,6 +114,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xxhdpi-v4\\powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_group_no_image.png.flat",
@@ -290,6 +298,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_small_button.xml.flat",
         "source": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\src\\main\\res\\drawable\\small_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xhdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
@@ -540,6 +552,10 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\2152d9d88ed767b7cd4d775d0f666f97\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xhdpi-v4\\powered_by_google_light.png"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_divider_material.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable\\abc_list_divider_material.xml"
     },
@@ -608,6 +624,10 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps_group.xml.flat",
+        "source": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\src\\main\\res\\layout\\activity_maps_group.xml"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\layout\\abc_alert_dialog_material.xml"
     },
@@ -626,6 +646,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_item_tint.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\b53c71eec0322f7ba99a511d928f063a\\res\\color\\mtrl_bottom_nav_colored_item_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xxxhdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_tint.xml.flat",
@@ -690,6 +714,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-hdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -812,6 +840,10 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-mdpi-v4\\powered_by_google_dark.png"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_text_view_to_fill.xml.flat",
         "source": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\src\\main\\res\\drawable\\text_view_to_fill.xml"
     },
@@ -840,8 +872,16 @@
         "source": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_info.png"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xxhdpi-v4\\places_ic_search.png"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_icon_group.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\e72d6a1859db7df45d70447c12f969ce\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-hdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -878,6 +918,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_btn_checkable.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\color\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps.xml.flat",
+        "source": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\src\\main\\res\\layout\\activity_maps.xml"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -918,6 +962,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_item_powered_by_google.xml.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_send_message.xml.flat",
@@ -1136,6 +1184,10 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-hdpi-v4\\powered_by_google_light.png"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\color\\abc_primary_text_material_dark.xml"
     },
@@ -1206,6 +1258,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_multichoice_material.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_progress.xml.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\layout\\place_autocomplete_progress.xml"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_group_no_image.xml.flat",
@@ -1280,6 +1336,10 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\2152d9d88ed767b7cd4d775d0f666f97\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-hdpi-v4\\powered_by_google_dark.png"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_add_a_photo_black_24dp.xml.flat",
         "source": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_add_a_photo_black_24dp.xml"
     },
@@ -1334,6 +1394,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_tooltip.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\layout\\abc_tooltip.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xxxhdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_text_btn_text_color_selector.xml.flat",
@@ -1592,6 +1656,10 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xxxhdpi-v4\\powered_by_google_light.png"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_fab_background.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\b53c71eec0322f7ba99a511d928f063a\\res\\drawable\\design_fab_background.xml"
     },
@@ -1638,6 +1706,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xxhdpi-v4\\powered_by_google_light.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
@@ -1770,6 +1842,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xhdpi-v4\\powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_no_requests.xml.flat",
@@ -1930,6 +2006,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xxhdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_bottom.xml.flat",
@@ -2118,6 +2198,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xhdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -2362,6 +2446,10 @@
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_requests.xml.flat",
         "source": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\src\\main\\res\\layout\\activity_requests.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_fragment.xml.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\layout\\place_autocomplete_fragment.xml"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -2616,6 +2704,10 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-xxxhdpi-v4\\powered_by_google_dark.png"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_off_mtrl_ring_outer_path_animation.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\anim\\btn_radio_to_off_mtrl_ring_outer_path_animation.xml"
     },
@@ -2700,6 +2792,10 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_item_prediction.xml.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\layout\\place_autocomplete_item_prediction.xml"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\b53c71eec0322f7ba99a511d928f063a\\res\\layout\\design_navigation_item_header.xml"
     },
@@ -2724,8 +2820,20 @@
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-mdpi-v4\\places_ic_clear.png"
+    },
+    {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material_anim.xml.flat",
         "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\drawable\\abc_btn_radio_material_anim.xml"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_places_ic_search.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-mdpi-v4\\places_ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_powered_by_google_light.png.flat",
+        "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\28802fbbb508f378cfc8ad2e7495d9d3\\res\\drawable-mdpi-v4\\powered_by_google_light.png"
     },
     {
         "merged": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
