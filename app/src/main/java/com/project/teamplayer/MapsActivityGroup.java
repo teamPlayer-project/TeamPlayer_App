@@ -20,6 +20,8 @@ public class MapsActivityGroup extends FragmentActivity implements OnMapReadyCal
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps_group);
+        String lat = getIntent().getStringExtra("lat");
+        String lon = getIntent().getStringExtra("lon");
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -39,6 +41,7 @@ public class MapsActivityGroup extends FragmentActivity implements OnMapReadyCal
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        //from DB to members
 
         // Add a marker in Sydney and move the camera
         mMap.addMarker(new MarkerOptions().position(defaultLocation).title("Marker in Sydney"));

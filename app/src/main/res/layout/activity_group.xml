@@ -129,6 +129,13 @@
             app:civ_border_color="#2e3191"
             app:civ_border_width="1dp" />
 
+        <Button
+            android:id="@+id/locationDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mapView"
+            android:text="See location" />
+
     </android.widget.RelativeLayout>
 
 </ScrollView>

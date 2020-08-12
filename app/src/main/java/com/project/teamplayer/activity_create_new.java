@@ -134,9 +134,6 @@ public class activity_create_new extends AppCompatActivity {
         activityName.setText(name);
     }
 
-
-
-
     public void backButton(View view) {
         Intent intent = new Intent(this, select_action.class);
         startActivity(intent);
@@ -315,6 +312,8 @@ public class activity_create_new extends AppCompatActivity {
         dataToSave.put("sportType", sportThatChosen);
         dataToSave.put("description", descriptionText);
         dataToSave.put("manager_email", email);
+        dataToSave.put("lat", "");
+        dataToSave.put("lon", "");
 
         docRef.set(dataToSave).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

@@ -49,6 +49,8 @@ public class activity_details extends AppCompatActivity {
     String ageRange;
     private ArrayList<String> managerList;
     private boolean isRequestSend;
+    private Button locationButton;
+    private String lat, lon;
 
 
     @Override
@@ -59,6 +61,7 @@ public class activity_details extends AppCompatActivity {
         activitiesNameList = getIntent().getStringArrayListExtra("ACTIVITIES_NAME_LIST");
         descriptionsList = getIntent().getStringArrayListExtra("DESCRIPTIONS_LIST");
         managerList = getIntent().getStringArrayListExtra("MANAGER_LIST");
+        locationButton = (Button) findViewById(R.id.location);
         getAgeRange();
         //Show action bar
         isRequestSend=false;
@@ -114,9 +117,6 @@ public class activity_details extends AppCompatActivity {
                 Log.e(TAG, "onCancelled", databaseError.toException());
             }
         });
-
-
-
     }
 
     /**
@@ -148,6 +148,12 @@ public class activity_details extends AppCompatActivity {
                     DocumentSnapshot document = task.getResult();
                     if (document != null) {
                         ageRange = document.getString("ageRange");
+                        lat = (String)document.get("lat");
+                        lon = (String)document.get("lon");
+                        if (lat.equals("")){
+                            locationButton.setClickable(false);
+                            locationButton.setText("No location");
+                        }
                         showDetails();
                     } else {
                         Log.d(TAG, "No such document");
@@ -209,6 +215,8 @@ public class activity_details extends AppCompatActivity {
         });
 
     }
+
+
     /**
      * The function go back to the previous screen when arrow bar is pressed
      * @param item
@@ -222,6 +230,13 @@ public class activity_details extends AppCompatActivity {
         intent.putStringArrayListExtra("Details", detailsList);
         startActivity(intent);
         return true;
+    }
+
+    public void mapView(View view) {
+        Intent intent = new Intent(this, MapsActivityGroup.class);
+        intent.putExtra("lat", lat);
+        intent.putExtra("lon", lon);
+        startActivity(intent);
     }
 
 

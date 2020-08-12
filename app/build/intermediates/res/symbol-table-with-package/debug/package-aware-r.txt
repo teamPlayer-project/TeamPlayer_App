@@ -1425,6 +1425,9 @@ id line3
 id listMode
 id listView
 id list_item
+id location
+id locationDetails
+id locationManager
 id logInButton
 id logInFailed
 id manager_recyclerView

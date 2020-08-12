@@ -22,7 +22,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
@@ -30,21 +37,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     GeoDataClient  mGeoDataClient;
     private GoogleMap mMap;
     private PlaceDetectionClient mPlaceDetectionClient;
+    private static final String TAG = "mapView";
+    private static final String ACTIVITIES_COLLECTION = "Activities/";
     FusedLocationProviderClient mFusedLocationProviderClient;
     private boolean locationPermissionGranted;
     private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
     private Location lastKnownLocation;
     private static final int DEFAULT_ZOOM = 15;
     private final LatLng defaultLocation = new LatLng(31.4117, 35.0818);
+    private String documentActivityName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        String lat = getIntent().getStringExtra("lat");
+        String lon = getIntent().getStringExtra("lon");
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        documentActivityName = getIntent().getStringExtra("ACTIVITY_NAME");
 
         // Construct a GeoDataClient.
         mGeoDataClient = Places.getGeoDataClient(this, null);
@@ -55,10 +68,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Construct a FusedLocationProviderClient.
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         getLocationPermission();
-
-
-
-
     }
 
 
@@ -95,8 +104,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 // Setting the position for the marker
                 markerOptions.position(latLng);
-                double lan = latLng.latitude;
                 double lat = latLng.latitude;
+                double lon = latLng.longitude;
+
+                DocumentReference docRef = FirebaseFirestore.getInstance()
+                        .collection(ACTIVITIES_COLLECTION).document(documentActivityName);
+                docRef.update("lat", lat, "lon", lon)
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Log.d(TAG, "activity was updated");
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w(TAG, "activity was not updated");
+                    }
+                });
+
 
                 // Setting the title for the marker.
                 // This will be displayed on taping the marker

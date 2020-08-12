@@ -69,6 +69,8 @@ public class manager extends AppCompatActivity {
     private ImageButton changeImage;
     private FirebaseStorage storage;
     private StorageReference storageReference;
+    private Button locationButton;
+    private String lat, lon;
 
     private RecyclerView mRecyclerView;
     private participantAdapter mAdapter;
@@ -114,6 +116,7 @@ public class manager extends AppCompatActivity {
         TextView activity_name = (TextView) findViewById(R.id.password);
         activity_name.setText(activityName);
         TextPaint paint = activity_name.getPaint();
+        locationButton = (Button) findViewById(R.id.locationManager);
         float width = paint.measureText(activityName);
         Shader textShader = new LinearGradient(0, 0, width, activity_name.getTextSize(),
                 new int[]{
@@ -304,6 +307,11 @@ public class manager extends AppCompatActivity {
                     DocumentSnapshot document = task.getResult();
                     if (document != null) {
                         Object usersEmails = document.get("participantes");
+                        lat = (String)document.get("lat");
+                        lon = (String)document.get("lon");
+                        if (lat.equals("")){
+                            locationButton.setText("Add location");
+                        }
                         if(usersEmails==null){
                             Log.i(TAG, "null");
                         }
@@ -562,6 +570,13 @@ public class manager extends AppCompatActivity {
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+    }
+
+    public void mapView(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        intent.putExtra("lat", lat);
+        intent.putExtra("lon", lon);
+        startActivity(intent);
     }
 
     @Override

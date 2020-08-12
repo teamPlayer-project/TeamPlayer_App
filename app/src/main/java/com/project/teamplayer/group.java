@@ -53,6 +53,8 @@ public class group extends AppCompatActivity {
     private FirebaseStorage storage;
     private StorageReference storageReference;
     private String backTo;
+    private String lat, lon;
+    private Button locationButton;
 
     private Uri filePath;
 
@@ -101,6 +103,7 @@ public class group extends AppCompatActivity {
         descr.setText(description);
 
         Button leaveActivity = (Button) findViewById(R.id.leaveButton);
+        locationButton = (Button) findViewById(R.id.locationDetails);
 
         leaveActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -180,6 +183,12 @@ public class group extends AppCompatActivity {
                     DocumentSnapshot document = task.getResult();
                     if (document != null) {
                         Object usersEmails = document.get("participantes");
+                        lat = (String)document.get("lat");
+                        lon = (String)document.get("lon");
+                        if (lat.equals("")){
+                            locationButton.setClickable(false);
+                            locationButton.setText("No location");
+                        }
                         if(usersEmails==null){
                             Log.i(TAG, "null");
                         }
@@ -280,6 +289,13 @@ public class group extends AppCompatActivity {
         Intent intent=new Intent(this,search_result.class);
         startActivity(intent);
 
+    }
+
+    public void mapView(View view) {
+        Intent intent = new Intent(this, MapsActivityGroup.class);
+        intent.putExtra("lat", lat);
+        intent.putExtra("lon", lon);
+        startActivity(intent);
     }
 
     /**
