@@ -5,10 +5,14 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -25,9 +29,16 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,20 +54,46 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private boolean locationPermissionGranted;
     private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
     private Location lastKnownLocation;
-    private static final int DEFAULT_ZOOM = 15;
-    private final LatLng defaultLocation = new LatLng(31.4117, 35.0818);
+    private static final int DEFAULT_ZOOM = 20;
+    private LatLng defaultLocation = new LatLng(31.4117, 35.0818);
     private String documentActivityName;
+    private String backTo;
+    private String description;
+    private String lat;
+    private String lon;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-        String lat = getIntent().getStringExtra("lat");
-        String lon = getIntent().getStringExtra("lon");
+         lat = getIntent().getStringExtra("lat");
+         lon = getIntent().getStringExtra("lon");
+        documentActivityName = getIntent().getStringExtra("ACTIVITY_NAME");
+        description = getIntent().getStringExtra("DESCRIPTION");
+        backTo = getIntent().getStringExtra("GOT_FROM");
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        Button done = (Button) findViewById(R.id.button5);
+        done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                doneButton();
+            }
+        });
+
+        ImageButton zoom = (ImageButton) findViewById(R.id.myLocation);
+        zoom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                zoomOnLocation();
+            }
+        });
         documentActivityName = getIntent().getStringExtra("ACTIVITY_NAME");
 
         // Construct a GeoDataClient.
@@ -83,6 +120,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.getUiSettings().setZoomControlsEnabled(true);
         // Turn on the My Location layer and the related control on the map.
         updateLocationUI();
 
@@ -92,20 +130,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      /*   LatLng sydney = new LatLng( 31.4117, 35.0818);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));*/
-
+        if (!lat.equals("")  && !lon.equals("")){
+            defaultLocation = new LatLng(Double.parseDouble(lat), Double.parseDouble(lon));
+            addMark(defaultLocation);
+        }
         // Setting a click event handler for the map
         mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
 
             @Override
             public void onMapClick(LatLng latLng) {
 
-                // Creating a marker
-                MarkerOptions markerOptions = new MarkerOptions();
-
-                // Setting the position for the marker
-                markerOptions.position(latLng);
-                double lat = latLng.latitude;
-                double lon = latLng.longitude;
+                String lat = Double.toString(latLng.latitude);
+                String lon = Double.toString(latLng.longitude);
 
                 DocumentReference docRef = FirebaseFirestore.getInstance()
                         .collection(ACTIVITIES_COLLECTION).document(documentActivityName);
@@ -121,24 +157,36 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         Log.w(TAG, "activity was not updated");
                     }
                 });
+                defaultLocation = latLng;
+                addMark(latLng);
 
 
-                // Setting the title for the marker.
-                // This will be displayed on taping the marker
-                markerOptions.title(latLng.latitude + " : " + latLng.longitude);
-
-                // Clears the previously touched position
-                mMap.clear();
-
-                // Animating to the touched position
-                mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-
-                // Placing a marker on the touched position
-                mMap.addMarker(markerOptions);
             }
         });
     }
 
+
+    private void addMark(LatLng latLng){
+        // Creating a marker
+        MarkerOptions markerOptions = new MarkerOptions();
+
+        // Setting the position for the marker
+        markerOptions.position(latLng);
+
+        // Setting the title for the marker.
+        // This will be displayed on taping the marker
+        markerOptions.title(latLng.latitude + " : " + latLng.longitude);
+
+        // Clears the previously touched position
+        mMap.clear();
+
+        // Animating to the touched position
+        mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+
+        // Placing a marker on the touched position
+        mMap.addMarker(markerOptions);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+    }
     private void getLocationPermission() {
         /*
          * Request location permission, so that we can get the location of the
@@ -185,7 +233,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 mMap.setMyLocationEnabled(false);
                 mMap.getUiSettings().setMyLocationButtonEnabled(false);
                 lastKnownLocation = null;
-                getLocationPermission();
+                addMark(defaultLocation);
             }
         } catch (SecurityException e)  {
             Log.e("Exception: %s", e.getMessage());
@@ -206,10 +254,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         if (task.isSuccessful()) {
                             // Set the map's camera position to the current location of the device.
                             lastKnownLocation = task.getResult();
-                            if (lastKnownLocation != null) {
+                            if (!lat.equals("")  && !lon.equals("")){
+                                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(
+                                        defaultLocation, DEFAULT_ZOOM));
+                            }
+
+                           else if (lastKnownLocation != null) {
                                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(
                                         new LatLng(lastKnownLocation.getLatitude(),
                                                 lastKnownLocation.getLongitude()), DEFAULT_ZOOM));
+                               if (lat.equals("")  && lon.equals("")){
+                                   defaultLocation =  new LatLng(lastKnownLocation.getLatitude(),
+                                           lastKnownLocation.getLongitude());
+                               }
                             }
                         } else {
                             mMap.moveCamera(CameraUpdateFactory
@@ -224,5 +281,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+    /**
+     * The function when user chose location
+     */
+    public void doneButton(){
+        Intent intent = new Intent(this, manager.class);
+        intent.putExtra("ACTIVITY_NAME", documentActivityName);
+        intent.putExtra("DESCRIPTION", description);
+        intent.putExtra("GOT_FROM", backTo);
+        startActivity(intent);
+ }
+
+    public void zoomOnLocation(){
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(defaultLocation));
+    }
 
 }

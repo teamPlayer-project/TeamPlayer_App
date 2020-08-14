@@ -98,13 +98,27 @@
             android:id="@+id/location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="80dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
             android:onClick="mapView"
             android:text="See location"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#273272"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="192dp"
+            android:layout_marginTop="68dp"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="522dp" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_foreground2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

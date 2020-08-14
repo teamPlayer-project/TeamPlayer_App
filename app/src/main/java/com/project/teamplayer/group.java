@@ -154,6 +154,7 @@ public class group extends AppCompatActivity {
         intent.putExtra("GOT_FROM", backTo);
         intent.putExtra("room_name", documentActivityName);
         intent.putExtra("DESCRIPTION", description);
+        intent.putExtra("Back_TO", "Group");
         if(backTo.equals("search_result")){
             ArrayList <String> activitiesNamesList= getIntent().getStringArrayListExtra("ACTIVITIES_NAME_LIST");
             ArrayList <String> descriptionsList= getIntent().getStringArrayListExtra("DESCRIPTIONS_LIST");
@@ -295,6 +296,10 @@ public class group extends AppCompatActivity {
         Intent intent = new Intent(this, MapsActivityGroup.class);
         intent.putExtra("lat", lat);
         intent.putExtra("lon", lon);
+        intent.putExtra("ACTIVITY_NAME", documentActivityName);
+        intent.putExtra("DESCRIPTION", description);
+        intent.putExtra("GOT_FROM", backTo);
+        intent.putExtra("Back_TO", "Group");
         startActivity(intent);
     }
 
@@ -346,8 +351,6 @@ public class group extends AppCompatActivity {
         groupImage = (ImageView) findViewById(R.id.profile_image);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
-        System.out.println("nameeeeeeeeeee");
-        System.out.println(documentActivityName);
         final StorageReference storageReference = storage.getReference("uploads/" + documentActivityName);
         storage.getReference("uploads/" + documentActivityName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override

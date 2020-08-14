@@ -231,6 +231,7 @@ public class manager extends AppCompatActivity {
         intent.putExtra("GOT_FROM", backTo);
         intent.putExtra("room_name", activityName);
         intent.putExtra("DESCRIPTION", description);
+        intent.putExtra("Back_TO", "Manager");
         if(backTo.equals("search_result")){
             ArrayList <String> activitiesNamesList= getIntent().getStringArrayListExtra("ACTIVITIES_NAME_LIST");
             ArrayList <String> descriptionsList= getIntent().getStringArrayListExtra("DESCRIPTIONS_LIST");
@@ -573,9 +574,14 @@ public class manager extends AppCompatActivity {
     }
 
     public void mapView(View view) {
+        description = getIntent().getStringExtra("DESCRIPTION");
+        backTo = getIntent().getStringExtra("GOT_FROM");
         Intent intent = new Intent(this, MapsActivity.class);
         intent.putExtra("lat", lat);
         intent.putExtra("lon", lon);
+        intent.putExtra("ACTIVITY_NAME", activityName);
+        intent.putExtra("DESCRIPTION", description);
+        intent.putExtra("GOT_FROM", backTo);
         startActivity(intent);
     }
 

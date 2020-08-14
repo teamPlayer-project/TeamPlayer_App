@@ -41,7 +41,8 @@
         android:text="Line 1"
         android:textColor="#012d8c"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="left|center_vertical"/>
 
     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/imageView"

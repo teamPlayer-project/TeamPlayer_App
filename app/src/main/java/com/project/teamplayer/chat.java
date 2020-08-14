@@ -61,6 +61,7 @@ public class chat extends AppCompatActivity {
     ActionBar actionbar;
     private LayoutParams layoutparams;
     String backTO;
+    private String backScreen;
 
 
 
@@ -75,6 +76,7 @@ public class chat extends AppCompatActivity {
         final FirebaseUser user = mAuth.getCurrentUser();
         final String email = user.getEmail();
         user_email= email;
+        backScreen = getIntent().getStringExtra("Back_TO");
         //Display back arrow on action bar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         listView = (ListView) findViewById(R.id.chatView);
@@ -188,7 +190,12 @@ public class chat extends AppCompatActivity {
      * @return
      */
     public boolean onOptionsItemSelected(MenuItem item){
-        Intent myIntent = new Intent(getApplicationContext(), manager.class);
+        Intent myIntent = null;
+        if (backScreen.equals("Manager")) {
+            myIntent = new Intent(getApplicationContext(), manager.class);
+        }else if (backScreen.equals("Group")){
+            myIntent = new Intent(getApplicationContext(), group.class);
+        }
         myIntent.putExtra("GOT_FROM", backTO);
         myIntent.putExtra("ACTIVITY_NAME", room_name);
         myIntent.putExtra("DESCRIPTION", description);

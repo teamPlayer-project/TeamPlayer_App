@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivityGroup" >
+
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,3 +14,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MapsActivityGroup" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#273272"
+        android:fontFamily="@font/lato_regular"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="5dp"/>
+
+    <ImageButton
+        android:id="@+id/myLocation"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:src="@drawable/ic_action_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"/>
+</FrameLayout>

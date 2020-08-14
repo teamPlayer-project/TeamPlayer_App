@@ -236,6 +236,11 @@ public class activity_details extends AppCompatActivity {
         Intent intent = new Intent(this, MapsActivityGroup.class);
         intent.putExtra("lat", lat);
         intent.putExtra("lon", lon);
+        intent.putExtra("Back_TO", "Details");
+        intent.putExtra("Details", detailsList);
+        intent.putExtra("ACTIVITIES_NAME_LIST", activitiesNameList);
+        intent.putExtra("DESCRIPTIONS_LIST", descriptionsList);
+        intent.putExtra("MANAGER_LIST", managerList);
         startActivity(intent);
     }
 

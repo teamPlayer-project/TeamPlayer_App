@@ -729,6 +729,7 @@ color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
+color ic_launcher_background3
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1164,6 +1165,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_action_name
 drawable ic_add_a_photo_black_24dp
 drawable ic_delete
 drawable ic_group_no_image
@@ -1176,6 +1178,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_os_notification_fallback_white_24dp
 drawable ic_person_no_image
 drawable ic_send_black_24dp
+drawable ic_send_black_24dp2
 drawable ic_stat_namev
 drawable ic_stat_namex
 drawable ic_stat_onesignal_default
@@ -1187,6 +1190,9 @@ drawable little_screen_upsidedown_reg
 drawable login
 drawable logotransparent
 drawable look_for
+drawable map
+drawable maplocation
+drawable messagerecived
 drawable messagesend
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1325,6 +1331,7 @@ id button14
 id button2
 id button3
 id button4
+id button5
 id button7
 id button8
 id buttonPanel
@@ -1408,6 +1415,8 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imageView2
+id imageView3
 id imageView_par
 id image_info
 id image_info1
@@ -1452,6 +1461,7 @@ id msg_input
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id myLocation
 id name
 id name_of_activity
 id navigation_header_container
@@ -1747,7 +1757,11 @@ layout send_message
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_foreground
+mipmap ic_launcher_foreground2
 mipmap ic_launcher_round
+mipmap ic_map
+mipmap ic_map_location
+mipmap ic_map_location_round
 raw consumer_onesignal_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
