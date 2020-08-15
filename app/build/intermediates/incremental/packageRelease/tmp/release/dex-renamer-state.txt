@@ -1,4 +1,4 @@
-#Tue Jul 21 09:34:12 IDT 2020
+#Sat Aug 15 15:43:23 IDT 2020
 base.0=C\:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
 path.1=classes2.dex
 renamed.1=classes2.dex
