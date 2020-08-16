@@ -192,9 +192,9 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\av
 	android:name
 		ADDED from C:\Users\avib\AndroidStudioProjects\TeamPlayer_App\app\src\main\AndroidManifest.xml:14:9-41
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\avib\AndroidStudioProjects\TeamPlayer_App\app\src\main\AndroidManifest.xml:31:9-33:55
+ADDED from C:\Users\avib\AndroidStudioProjects\TeamPlayer_App\app\src\main\AndroidManifest.xml:31:9-33:71
 	android:value
-		ADDED from C:\Users\avib\AndroidStudioProjects\TeamPlayer_App\app\src\main\AndroidManifest.xml:33:13-52
+		ADDED from C:\Users\avib\AndroidStudioProjects\TeamPlayer_App\app\src\main\AndroidManifest.xml:33:13-68
 	android:name
 		ADDED from C:\Users\avib\AndroidStudioProjects\TeamPlayer_App\app\src\main\AndroidManifest.xml:32:13-58
 activity#com.project.teamplayer.MapsActivityGroup

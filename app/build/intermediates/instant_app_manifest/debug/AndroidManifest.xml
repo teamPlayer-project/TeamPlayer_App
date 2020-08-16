@@ -83,7 +83,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyAvvw7LmW7cRX7Ei_dI9U8vWxJdoWjLlSI" />
 
         <activity
             android:name="com.project.teamplayer.MapsActivityGroup"

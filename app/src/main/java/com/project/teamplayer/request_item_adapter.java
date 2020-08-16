@@ -182,7 +182,6 @@ public class request_item_adapter  extends ArrayAdapter<requestItem> {
     public void addProfileimage(final ImageView imageUser,final String email){
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
-        final StorageReference storageReference = storage.getReference("uploads/" + email);
         synchronized(this) {
             //Upload the user photo from DB
             storage.getReference("uploads/" + email).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -190,7 +189,7 @@ public class request_item_adapter  extends ArrayAdapter<requestItem> {
                 @Override
                 public void onSuccess(Uri uri) {
                     Glide.with(context /* context */)
-                            .load(storageReference)
+                            .load(uri)
                             .into(imageUser);
                 }
 

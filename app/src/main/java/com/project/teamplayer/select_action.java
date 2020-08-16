@@ -62,13 +62,12 @@ public class select_action extends AppCompatActivity {
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
         final String userEmail = FirebaseAuth.getInstance().getCurrentUser().getEmail();
-        final StorageReference storageReference = storage.getReference("uploads/" + userEmail);
         try {
             storage.getReference("uploads/" + userEmail).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                 @Override
                 public void onSuccess(Uri uri) {
                     Glide.with(context /* context */)
-                            .load(storageReference)
+                            .load(uri)
                             .into(imageUser);
                 }
             }).addOnFailureListener(new OnFailureListener() {

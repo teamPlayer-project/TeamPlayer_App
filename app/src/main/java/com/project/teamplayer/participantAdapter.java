@@ -115,7 +115,7 @@ public class participantAdapter extends RecyclerView.Adapter<participantAdapter.
             @Override
             public void onSuccess(Uri uri) {
                 Glide.with(context)
-                        .load(storageReference)
+                        .load(uri)
                         .into(holder.mImageView);
             }
         }).addOnFailureListener(new OnFailureListener() {
