@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/screen_upside_try"
+    android:background="@drawable/background"
     tools:context=".sport_type">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,13 +19,14 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/select_action_backround"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/segoe_ui_bold"
             android:text="done"
             android:textAllCaps="true"
-            android:textColor="#012d8c"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.webianks.library.scroll_choice.ScrollChoice
@@ -37,7 +38,6 @@
             android:background="@null"
             app:layout_constraintBottom_toTopOf="@+id/done_sport_type"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
