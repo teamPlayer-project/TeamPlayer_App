@@ -101,7 +101,7 @@ public class select_action extends AppCompatActivity {
 
                     if (document.exists()) {
                         String user_name= document.getString("Name");
-                        welcomeText.setText("Hello "+user_name);
+                        welcomeText.setText(user_name);
 
 
 

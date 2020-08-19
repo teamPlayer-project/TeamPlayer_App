@@ -63,6 +63,7 @@ public class registration extends AppCompatActivity {
         password.setTransformationMethod(PasswordTransformationMethod.getInstance());
         EditText passwordAgain= (EditText) findViewById(R.id.passwordConfrim);
         passwordAgain.setTransformationMethod(PasswordTransformationMethod.getInstance());
+        getSupportActionBar().hide();
         setTitle("Registration");
         chooseDate();
     }
@@ -225,6 +226,7 @@ public class registration extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         updateUI(currentUser);
     }
+
     public boolean checkPassword(String password,String confirmPassword){
         String  message;
 
@@ -269,6 +271,11 @@ public class registration extends AppCompatActivity {
                 Log.w(TAG, "document faild");
             }
         });
+    }
+
+    public void backButton(View view){
+        Intent intent=new Intent(this,activity_Login.class);
+        startActivity(intent);
     }
 }
 

@@ -16,7 +16,7 @@
         android:divider="@null"
         android:dividerHeight="10.0sp"
         android:padding="2dip"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -5,7 +5,7 @@
     android:id="@+id/view_relative"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/little_screen_upsidedown_reg"
+    android:background="#EBF5FF"
     android:layout_alignParentTop="true"
     tools:context=".manager">
 
@@ -24,7 +24,7 @@
             android:layout_marginEnd="24dp"
             android:layout_toStartOf="@+id/edit_button"
             android:background="@drawable/buttons_backrounds"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/segoe_ui_bold"
             android:onClick="joinRequest"
             android:text="Join Requests"
             android:textColor="#FFFFFF"
@@ -47,7 +47,7 @@
             android:layout_marginTop="171dp"
             android:layout_marginEnd="26dp"
             android:background="@drawable/buttons_backrounds"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/segoe_ui_bold"
             android:text="Chat"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
@@ -75,7 +75,7 @@
             android:layout_marginTop="68dp"
             android:layout_marginEnd="22dp"
             android:background="@drawable/buttons_backrounds"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/segoe_ui_bold"
             android:text="Edit Activity"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />

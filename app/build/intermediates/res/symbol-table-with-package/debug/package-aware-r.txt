@@ -1126,6 +1126,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable background
+drawable birthday
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1163,6 +1165,9 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable email
+drawable eye
+drawable eye2x
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_action_name
@@ -1185,9 +1190,13 @@ drawable ic_stat_onesignal_default
 drawable ic_visibility_black_24dp
 drawable ic_visibility_off_black_24dp
 drawable image_circle
+drawable key
 drawable little_screen
 drawable little_screen_upsidedown_reg
 drawable login
+drawable logo
+drawable logo2x
+drawable logo3x
 drawable logotransparent
 drawable look_for
 drawable map
@@ -1226,7 +1235,9 @@ drawable text_view_to_fill2
 drawable textview_border
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable transperantlogo
 drawable try_again_new
+drawable user2x
 font alegreya
 font alfa_slab_one
 font bungee_inline
@@ -1235,14 +1246,21 @@ font bungee_shade
 font diplomata
 font holtwood_one_sc
 font lato_regular
+font segoe_ui
+font segoe_ui_bold
 font titan_one
 id ALT
 id CTRL
+id DateLayout
 id DetailsTitle
 id Email
+id EmailLayout
 id FUNCTION
 id GroupImage
 id META
+id NameLayout
+id PassworConfirmdLayout
+id PasswordLayout
 id PhotoButtun
 id SHIFT
 id SYM
@@ -1308,7 +1326,6 @@ id adjust_height
 id adjust_width
 id age
 id age_Range_textView
-id age_text_view
 id alertTitle
 id all
 id always
@@ -1316,8 +1333,10 @@ id async
 id auto
 id autoCompleteTextView
 id autoCompleteTextViewSearch
+id back
 id barrier
 id beginning
+id birtday
 id blocking
 id bottom
 id browser_actions_header_text
@@ -1386,6 +1405,7 @@ id editMaxPlayers
 id edit_button
 id edit_description
 id edit_query
+id email
 id emailFailed
 id end
 id end_padder
@@ -1424,6 +1444,8 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id key
+id key2
 id labeled
 id largeLabel
 id leaveButton
@@ -1439,6 +1461,7 @@ id locationDetails
 id locationManager
 id logInButton
 id logInFailed
+id logo
 id manager_recyclerView
 id map
 id masked
@@ -1463,6 +1486,7 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id myLocation
 id name
+id nameP
 id name_of_activity
 id navigation_header_container
 id never
@@ -1522,7 +1546,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView2
 id scrollView3
 id scrollView4
 id scrollViewForSelectAction
@@ -1589,6 +1612,7 @@ id textView
 id textView10
 id textView12
 id textView13
+id textView2
 id textView3
 id textView4
 id textView5
@@ -1621,6 +1645,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user
 id view_offset_helper
 id view_relative
 id visible

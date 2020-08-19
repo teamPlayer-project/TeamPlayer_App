@@ -1,4 +1,4 @@
-#Sun Aug 16 18:19:17 IDT 2020
+#Wed Aug 19 08:42:16 IDT 2020
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex

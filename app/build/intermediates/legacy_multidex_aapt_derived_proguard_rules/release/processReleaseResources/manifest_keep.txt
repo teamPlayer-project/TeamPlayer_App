@@ -1,4 +1,0 @@
-# Referenced at C:\Users\avib\AndroidStudioProjects\TeamPlayer_App\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:63
--keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at C:\Users\avib\AndroidStudioProjects\TeamPlayer_App\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:63
--keep class com.project.teamplayer.ApplicationClass { <init>(); }

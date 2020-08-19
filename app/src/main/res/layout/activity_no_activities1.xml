@@ -4,49 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/little_screen"
+    android:background="@drawable/background">
     tools:context=".no_activities1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/activity_name_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/no_activities1"
-            android:layout_width="183dp"
+            android:layout_width="300dp"
             android:layout_height="39dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="228dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/buttons_backrounds"
+            android:background="@drawable/select_action_backround"
+            android:fontFamily="@font/segoe_ui_bold"
             android:onClick="goToSearch"
+            android:text="Search"
             android:textColor="@android:color/white"
             android:textSize="24sp"
-            android:text="Search"
-            android:fontFamily="@font/lato_regular"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/no_activities"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@+id/no_activities" />
 
         <TextView
             android:id="@+id/no_activities"
-            android:layout_width="223dp"
-            android:layout_height="106dp"
-            android:layout_marginTop="200dp"
-            android:fontFamily="@font/lato_regular"
+            android:layout_width="300dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="188dp"
+            android:fontFamily="@font/segoe_ui_bold"
             android:padding="5dp"
             android:text="No Activities"
             android:textAlignment="center"
+            android:gravity="center"
             android:textAllCaps="true"
-            android:textColor="#012d8c"
-            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.452"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

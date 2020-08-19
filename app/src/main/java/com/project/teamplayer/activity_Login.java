@@ -41,6 +41,7 @@ public class activity_Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         intent=new Intent(this,select_action.class);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
         final AlertDialog dialog;
         if (user != null) {
             if(user.isEmailVerified()){
@@ -64,7 +65,7 @@ public class activity_Login extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__login);
-
+        getSupportActionBar().hide();
         password= (EditText) findViewById(R.id.password);
         failureMessage = (TextView) findViewById(R.id.logInFailed);
         //Hide Text
