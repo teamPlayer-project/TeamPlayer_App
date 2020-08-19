@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Aug 19 12:29:21 EEST 2020
+#Wed Aug 19 15:20:02 EEST 2020
 1.base=C\:\\Users\\renan\\AndroidStudioProjects\\TeamPlayer_App_newDesign1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 2.path=classes2.dex
 0.baseType=DIRECTORY

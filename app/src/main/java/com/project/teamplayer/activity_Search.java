@@ -64,7 +64,7 @@ public class activity_Search extends AppCompatActivity {
         //buttonAge.setText(ageThatChosen);
        // buttonCity.setText(cityThatChosen);
         buttonsportType.setText(cityThatChosen);
-        setTitle("search activity");
+        setTitle("Search Activity");
 
         loadCities();
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
