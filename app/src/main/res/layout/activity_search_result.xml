@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/little_screen_upsidedown_reg"
+    android:background="@drawable/background"
     tools:context=".search_result">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -12,9 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="685dp"
         android:layout_marginBottom="100dp"
-        android:dividerHeight="18.0sp"
+        android:dividerHeight="30.0sp"
         android:paddingTop="10dp"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
 
 
 </RelativeLayout>

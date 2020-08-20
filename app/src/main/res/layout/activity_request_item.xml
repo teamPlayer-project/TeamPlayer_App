@@ -8,7 +8,9 @@
     android:layout_marginTop="30dp"
     android:background="@drawable/text_view_to_fill"
     android:shape="oval"
-    android:padding="4dp"
+    android:padding="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
     >
 
 
@@ -19,43 +21,46 @@
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@id/accept"
         android:layout_toRightOf="@id/profile_image"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
-        android:fontFamily="@font/lato_regular"
-        android:textColor="#012d8c"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:textColor="#145202"
         android:textSize="20sp" />
 
 
     <ImageButton
         android:id="@+id/accept"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_centerVertical="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="0dp"
         android:layout_toLeftOf="@id/decline"
-        android:src="@drawable/ic_stat_namev"
-        android:background="@drawable/small_button"/>
+        android:src="@drawable/ic_accept"
+        android:background="@null"
+        />
 
     <ImageButton
         android:id="@+id/decline"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="8dp"
-        android:src="@drawable/ic_stat_namex"
-        android:background="@drawable/small_button"/>
+        android:src="@drawable/ic_declie"
+        android:background="@null"
+     />
 
 
     <de.hdodenhof.circleimageview.CircleImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:src="@drawable/ic_person_no_image"
-        app:civ_border_width="1dp"
+        app:civ_border_width="2dp"
         android:layout_centerVertical="true"
-        app:civ_border_color="#2e3191"/>
+        app:civ_border_color="#145202"
+        android:paddingStart="5dp"/>
 
 
 </RelativeLayout>

@@ -1124,6 +1124,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable accepticon
+drawable accepticon2
 drawable avd_hide_password
 drawable avd_show_password
 drawable background
@@ -1158,6 +1160,9 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable create_new
+drawable declineicon
+drawable declineicon2
+drawable decloneicon3
 drawable description_view_to_fill
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1170,8 +1175,10 @@ drawable eye
 drawable eye2x
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_accept
 drawable ic_action_name
 drawable ic_add_a_photo_black_24dp
+drawable ic_declie
 drawable ic_delete
 drawable ic_group_no_image
 drawable ic_info

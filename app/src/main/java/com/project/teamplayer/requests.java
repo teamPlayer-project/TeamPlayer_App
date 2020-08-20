@@ -117,9 +117,8 @@ public class requests extends AppCompatActivity {
            //Add a new request iten to the list
             String message = (String) ((DataSnapshot)i.next()).getValue();
             String email = (String) ((DataSnapshot)i.next()).getValue();
-            System.out.println("requestsssssss");
-            System.out.println(email);
-            String newMessage= message +" asked to join the group";
+            String newMessage= message ;
+            //" asked to join the group"
             requestList.add(new requestItem(newMessage,email,activity_name));
         }
         request_item_adapter adapter = new request_item_adapter(this, R.layout.activity_request_item, requestList);

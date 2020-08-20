@@ -4,19 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/little_screen"
+    android:background="@drawable/background"
     android:gravity="center"
     tools:context=".no_requests">
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_regular"
+        android:layout_width="300dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:gravity="center"
         android:padding="5dp"
         android:text="No New Requests"
+        android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#012d8c"
-        android:textSize="30sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </RelativeLayout>
