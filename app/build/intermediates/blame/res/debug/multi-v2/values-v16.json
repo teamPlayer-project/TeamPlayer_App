@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\Reut\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\e72d6a1859db7df45d70447c12f969ce\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Reut\\.gradle\\caches\\transforms-2\\files-2.1\\d5907ef0a49b899bef61d34fe4f9caf3\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Reut\\.gradle\\caches\\transforms-2\\files-2.1\\b52de85c6b23deb8ab12e31b1e0f57fe\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

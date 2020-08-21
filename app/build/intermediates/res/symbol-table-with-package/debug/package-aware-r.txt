@@ -1165,6 +1165,7 @@ drawable create_new
 drawable declineicon
 drawable declineicon2
 drawable decloneicon3
+drawable delete_activity_button
 drawable description_view_to_fill
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1173,6 +1174,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dollar
+drawable edit
 drawable email
 drawable eye
 drawable eye2x
@@ -1203,6 +1205,7 @@ drawable ic_visibility_black_24dp
 drawable ic_visibility_off_black_24dp
 drawable image_circle
 drawable key
+drawable line
 drawable little_screen
 drawable little_screen_upsidedown_reg
 drawable login
@@ -1230,6 +1233,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pariticipants_background
 drawable person
 drawable places_ic_clear
 drawable places_ic_search
@@ -1250,6 +1254,7 @@ drawable textview_border
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable transperantlogo
+drawable trash
 drawable try_again_new
 drawable user2x
 font alegreya
@@ -1266,7 +1271,6 @@ font titan_one
 id ALT
 id CTRL
 id DateLayout
-id DetailsTitle
 id Email
 id EmailLayout
 id FUNCTION
@@ -1452,8 +1456,6 @@ id icon_only
 id ifRoom
 id image
 id imageView
-id imageView2
-id imageView3
 id imageView_par
 id image_info
 id image_info1
@@ -1527,7 +1529,6 @@ id os_bgimage_notif_body
 id os_bgimage_notif_title
 id outline
 id packed
-id paeticipants
 id parallax
 id parent
 id parentPanel
@@ -1635,6 +1636,9 @@ id textView
 id textView13
 id textView2
 id textView3
+id textView4
+id textView5
+id textView6
 id textView9
 id textView_par
 id text_input_password_toggle

@@ -37,7 +37,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/select_action_backround"
             android:fontFamily="@font/segoe_ui_bold"
             android:onClick="createActivity"
@@ -53,7 +53,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/select_action_backround"
             android:fontFamily="@font/segoe_ui_bold"
             android:onClick="myActivity"
@@ -83,12 +83,11 @@
             android:id="@+id/PhotoButtun"
             android:layout_width="44dp"
             android:layout_height="64dp"
-            android:layout_marginEnd="104dp"
+            android:layout_marginEnd="108dp"
             android:background="@drawable/image_circle"
             android:src="@drawable/ic_add_a_photo_black_24dp"
             app:layout_constraintEnd_toEndOf="@+id/profile_image"
-            app:layout_constraintTop_toTopOf="@+id/profile_image"
-            />
+            app:layout_constraintTop_toTopOf="@+id/profile_image" />
 
         <TextView
             android:id="@+id/welcomeText"

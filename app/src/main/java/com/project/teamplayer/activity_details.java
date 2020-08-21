@@ -1,9 +1,14 @@
 package com.project.teamplayer;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -16,6 +21,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +31,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -51,6 +59,9 @@ public class activity_details extends AppCompatActivity {
     private boolean isRequestSend;
     private Button locationButton;
     private String lat, lon;
+    private FirebaseStorage storage;
+    private StorageReference storageReference;
+    private ImageView groupImage;
 
 
     @Override
@@ -62,12 +73,13 @@ public class activity_details extends AppCompatActivity {
         descriptionsList = getIntent().getStringArrayListExtra("DESCRIPTIONS_LIST");
         managerList = getIntent().getStringArrayListExtra("MANAGER_LIST");
         locationButton = (Button) findViewById(R.id.location);
+        activity_name = detailsList.get(0);
+        downloadImage();
         getAgeRange();
         //Show action bar
         isRequestSend=false;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mAuth = FirebaseAuth.getInstance();
-        activity_name = detailsList.get(0);
         setTitle(activity_name + " activity details");
         //get the manager email
         DocumentReference userNAme = db.collection("Activities").document(activity_name);
@@ -108,7 +120,7 @@ public class activity_details extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()){
                     requestButton.setClickable(false);
-                    requestButton.setText("Request sent");
+                    requestButton.setText("Request Sent");
                 }
             }
 
@@ -244,5 +256,29 @@ public class activity_details extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * download the image of the activity
+     */
+    public void downloadImage(){
+        final Context context= this;
+        groupImage = (ImageView) findViewById(R.id.profile_image);
+        storage = FirebaseStorage.getInstance();
+        storageReference = storage.getReference();
+        final StorageReference storageReference = storage.getReference("uploads/" + activity_name);
+        storage.getReference("uploads/" + activity_name).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Glide.with(context /* context */)
+                        .load(storageReference)
+                        .into(groupImage);
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                // File not found
+            }
+        });
+
+    }
 
 }

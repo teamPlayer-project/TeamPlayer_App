@@ -129,7 +129,7 @@ public class participantAdapter extends RecyclerView.Adapter<participantAdapter.
         String currentEmail = user.getEmail();
 
         if (!currentEmail.equals(parEmail)){
-            holder.mInfoImage.setImageResource(R.drawable.ic_delete);
+            holder.mInfoImage.setImageResource(R.drawable.trash);
         }
 
         //holder.mImageView.setImageResource(currentItem.getImageResource());

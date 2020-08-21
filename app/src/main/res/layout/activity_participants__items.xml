@@ -48,12 +48,12 @@
 
         <ImageView
             android:id="@+id/image_info1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-
-            />
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="14dp" />
 
     </RelativeLayout>
 

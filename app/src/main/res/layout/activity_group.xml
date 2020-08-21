@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/little_screen_upsidedown_reg"
+    android:background="#EBF5FF"
     tools:context=".group">
 
     <android.widget.RelativeLayout
@@ -13,148 +13,176 @@
 
         <Button
             android:id="@+id/leaveButton"
-            android:layout_width="105dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/chatButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/locationDetails"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/buttons_backrounds"
-            android:fontFamily="@font/lato_regular"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="59dp"
+            android:background="@drawable/delete_activity_button"
+            android:fontFamily="@font/segoe_ui_bold"
             android:text="Leave Activity"
             android:textColor="#FFFFFF"
-            android:textStyle="bold" />
+            android:textSize="21dp"
+            app:textAllCaps="false" />
 
         <Button
             android:id="@+id/chatButton"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/details_to_fill"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="166dp"
-            android:layout_marginEnd="22dp"
-            android:background="@drawable/buttons_backrounds"
-            android:fontFamily="@font/lato_regular"
-            android:onClick="chatButton"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="59dp"
+            android:background="@drawable/select_action_backround"
+            android:fontFamily="@font/segoe_ui_bold"
             android:text="Chat"
+            android:onClick="chatButton"
             android:textColor="#FFFFFF"
-            android:textStyle="bold" />
+            android:textSize="21dp"
+            app:textAllCaps="false"/>
 
-        <EditText
+
+        <TextView
             android:id="@+id/details_to_fill"
-            android:layout_width="270dp"
-            android:layout_height="100dp"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="177dp"
-            android:layout_marginEnd="139dp"
-            android:background="@drawable/description_view_to_fill"
-            android:fontFamily="@font/lato_regular"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="218dp"
+            android:layout_marginEnd="24dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/segoe_ui"
+            android:gravity="center_horizontal|center_vertical"
             android:padding="10dp"
             android:textColor="#012d8c"
-            android:textIsSelectable="false"
-            android:textSize="24sp"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.592"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
+            android:id="@+id/textView6"
+            android:layout_width="148dp"
+            android:layout_height="2dp"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_marginTop="13dp"
+            android:background="#115496" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/leaveButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="150dp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:text=" Participants"
+            android:textColor="#115496"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:background="#115496" />
+
+        <TextView
             android:id="@+id/name_of_activity"
-            android:layout_width="wrap_content"
-            android:layout_height="69dp"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="118dp"
-            android:layout_marginTop="43dp"
-            android:layout_marginEnd="18dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginEnd="25dp"
             android:layout_marginBottom="574dp"
-            android:fontFamily="@font/lato_regular"
-            android:textAllCaps="true"
-            android:textColor="#012d8c"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:gravity="center_horizontal|center_vertical"
             android:paddingTop="20dp"
+            android:textAllCaps="true"
+            android:textColor="#115496"
+            android:textSize="18dp"
+            android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.606"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:gravity="left|center_vertical"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <!--TextView
             android:id="@+id/paeticipants"
             android:layout_width="179dp"
             android:layout_height="27dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="296dp"
-            android:layout_marginEnd="216dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="342dp"
+            android:layout_marginEnd="133dp"
             android:fontFamily="@font/lato_regular"
             android:text="PARTICIPANTS:"
             android:textAllCaps="true"
             android:textColor="#012d8c"
             android:textColorHighlight="@color/design_default_color_primary"
             android:textSize="20sp"
-            android:textStyle="bold" />
-
+            android:textStyle="bold" /-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/GroupImage"
-            android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:layout_below="@+id/details_to_fill"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="59dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="6dp"
-            android:padding="4dp"
-            android:scrollbars="vertical" />
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leaveButton"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/pariticipants_background"
+            android:padding="4dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/profile_image"
-            android:layout_width="73dp"
-            android:layout_height="73dp"
+            android:layout_width="177dp"
+            android:layout_height="134dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="18dp"
             android:src="@drawable/ic_group_no_image"
             app:civ_border_color="#2e3191"
             app:civ_border_width="1dp" />
 
         <Button
             android:id="@+id/locationDetails"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/profile_image"
-            android:layout_marginStart="-31dp"
-            android:layout_marginTop="11dp"
-            android:layout_toEndOf="@+id/profile_image"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/lato_regular"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/chatButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="59dp"
+            android:background="@drawable/select_action_backround"
+            android:fontFamily="@font/segoe_ui_bold"
             android:onClick="mapView"
             android:text="See location"
-            android:textColor="#273272"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textColor="#FFFFFF"
+            android:textSize="21dp"
+            app:textAllCaps="false" />
 
-        <ImageView
+        <!--ImageView
             android:id="@+id/imageView3"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="118dp"
-            app:srcCompat="@mipmap/ic_launcher_foreground2" />
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="206dp"
+            app:srcCompat="@mipmap/ic_launcher_foreground2" /-->
 
 
     </android.widget.RelativeLayout>
