@@ -14,14 +14,6 @@
         android:layout_height="wrap_content">
 
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="148dp"
-            android:layout_height="2dp"
-            android:layout_alignTop="@+id/textView4"
-            android:layout_marginTop="13dp"
-            android:background="#115496" />
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/manager_recyclerView"
             android:layout_width="410dp"
@@ -39,8 +31,10 @@
             android:layout_height="134dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginStart="115dp"
             android:layout_marginTop="18dp"
+            android:layout_marginEnd="119dp"
             android:src="@drawable/ic_group_no_image"
             app:civ_border_color="#2e3191"
             app:civ_border_width="1dp" />
@@ -119,7 +113,9 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_below="@+id/activity_description"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="59dp"
             android:background="@drawable/select_action_backround"
@@ -134,7 +130,9 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_below="@+id/locationManager"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="59dp"
             android:background="@drawable/delete_activity_button"
@@ -149,7 +147,9 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_below="@+id/deleteButton"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="59dp"
             android:background="@drawable/select_action_backround"
@@ -165,7 +165,9 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_below="@+id/button_Chat"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="59dp"
             android:background="@drawable/select_action_backround"
@@ -176,29 +178,34 @@
             android:textSize="21dp"
             app:textAllCaps="false" />
 
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="0dp"
+            android:background="#115496" />
+
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:layout_below="@+id/button_join_request"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="150dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="150dp"
             android:fontFamily="@font/segoe_ui_bold"
             android:text=" Participants"
+            android:background="#EBF5FF"
             android:textColor="#115496"
             android:textSize="18dp" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="150dp"
-            android:layout_height="2dp"
-            android:layout_alignTop="@+id/textView4"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="13dp"
-            android:background="#115496" />
 
         <!---ImageView
             android:id="@+id/imageView3"

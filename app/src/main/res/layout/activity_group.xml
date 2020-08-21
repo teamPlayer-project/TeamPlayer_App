@@ -16,7 +16,9 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_below="@+id/locationDetails"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="59dp"
             android:background="@drawable/delete_activity_button"
@@ -31,16 +33,18 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_below="@+id/details_to_fill"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="59dp"
             android:background="@drawable/select_action_backround"
             android:fontFamily="@font/segoe_ui_bold"
-            android:text="Chat"
             android:onClick="chatButton"
+            android:text="Chat"
             android:textColor="#FFFFFF"
             android:textSize="21dp"
-            app:textAllCaps="false"/>
+            app:textAllCaps="false" />
 
 
         <TextView
@@ -63,37 +67,46 @@
             app:layout_constraintHorizontal_bias="0.592"
             app:layout_constraintStart_toStartOf="parent" />
 
+
+
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="148dp"
+            android:layout_width="wrap_content"
             android:layout_height="2dp"
             android:layout_alignTop="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="13dp"
+            android:layout_marginEnd="0dp"
             android:background="#115496" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:layout_below="@+id/leaveButton"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="150dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="150dp"
             android:fontFamily="@font/segoe_ui_bold"
             android:text=" Participants"
+            android:background="#EBF5FF"
             android:textColor="#115496"
             android:textSize="18dp" />
 
-        <TextView
+
+
+        <!--TextView
             android:id="@+id/textView5"
             android:layout_width="150dp"
             android:layout_height="2dp"
             android:layout_alignTop="@+id/textView4"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="13dp"
-            android:background="#115496" />
+            android:background="#115496" /-->
 
         <TextView
             android:id="@+id/name_of_activity"
@@ -146,14 +159,16 @@
             android:background="@drawable/pariticipants_background"
             android:padding="4dp" />
 
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="177dp"
             android:layout_height="134dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginStart="115dp"
             android:layout_marginTop="18dp"
+            android:layout_marginEnd="119dp"
             android:src="@drawable/ic_group_no_image"
             app:civ_border_color="#2e3191"
             app:civ_border_width="1dp" />
@@ -163,7 +178,9 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_below="@+id/chatButton"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="59dp"
             android:background="@drawable/select_action_backround"
