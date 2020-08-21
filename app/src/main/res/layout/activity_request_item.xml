@@ -25,37 +25,38 @@
         android:paddingRight="5dp"
         android:fontFamily="@font/segoe_ui_bold"
         android:textColor="#145202"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        />
 
 
     <ImageButton
         android:id="@+id/accept"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_centerVertical="true"
-        android:layout_marginRight="0dp"
+        android:layout_marginRight="10dp"
         android:layout_toLeftOf="@id/decline"
         android:src="@drawable/ic_accept"
-        android:background="@null"
+        android:background="@drawable/grenn_image_circlr"
         />
 
     <ImageButton
         android:id="@+id/decline"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="8dp"
         android:src="@drawable/ic_declie"
-        android:background="@null"
+        android:background="@drawable/grenn_image_circlr"
      />
 
 
     <de.hdodenhof.circleimageview.CircleImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@drawable/ic_person_no_image"
         app:civ_border_width="2dp"
         android:layout_centerVertical="true"

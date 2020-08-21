@@ -6,54 +6,56 @@
     android:layout_marginBottom="4dp"
     android:background="@drawable/text_view_to_fill"
     android:padding="10dp"
-    android:shape="oval">
+    android:shape="oval"
+    android:layout_marginVertical="10dp">
 
 
     <ImageView
         android:id="@+id/image_info"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:src="@drawable/ic_info"
-        android:layout_marginLeft="5dp"/>
+        android:src="@drawable/ic_goto_activity"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"/>
 
     <TextView
         android:id="@+id/activity_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
+        android:layout_gravity="center_vertical"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@+id/image_info"
         android:layout_toEndOf="@+id/image_info"
         android:layout_toRightOf="@+id/imageView"
-        android:layout_toLeftOf="@+id/image_info"
-        android:text="Line 2"
-        android:textSize="15sp"
-        android:layout_marginLeft="5dp"
-        android:textColor="#7B7B7B"
         android:fontFamily="@font/segoe_ui"
-        android:layout_gravity="center_vertical"/>
+        android:text="Line 2"
+        android:textColor="#7B7B7B"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="18dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="18dp"
         android:layout_toLeftOf="@+id/image_info"
         android:layout_toRightOf="@+id/imageView"
         android:fontFamily="@font/segoe_ui_bold"
         android:maxWidth="270dp"
+        android:layout_centerVertical="true"
         android:text="Line 1"
-
         android:textColor="#145202"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginLeft="5dp"
-        android:layout_centerVertical="true"
-        />
+        android:textStyle="bold" />
 
     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/imageView"
@@ -61,8 +63,8 @@
         android:layout_height="70dp"
         android:layout_centerVertical="true"
         android:src="@drawable/ic_group_no_image"
-        app:civ_border_color="#1D54BF"
-        app:civ_border_width="1dp" />
+        app:civ_border_color="#145202"
+        app:civ_border_width="2dp" />
 
 
 </RelativeLayout>

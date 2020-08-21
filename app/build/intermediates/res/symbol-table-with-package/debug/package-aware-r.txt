@@ -1128,6 +1128,7 @@ drawable accepticon
 drawable accepticon2
 drawable avd_hide_password
 drawable avd_show_password
+drawable baby
 drawable background
 drawable birthday
 drawable btn_checkbox_checked_mtrl
@@ -1140,6 +1141,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable buttons_backrounds
 drawable chat_send_background
+drawable city
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1170,16 +1172,19 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dollar
 drawable email
 drawable eye
 drawable eye2x
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable grenn_image_circlr
 drawable ic_accept
 drawable ic_action_name
 drawable ic_add_a_photo_black_24dp
 drawable ic_declie
 drawable ic_delete
+drawable ic_goto_activity
 drawable ic_group_no_image
 drawable ic_info
 drawable ic_launcher_background
@@ -1225,6 +1230,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable person
 drawable places_ic_clear
 drawable places_ic_search
 drawable powered_by_google_dark
@@ -1236,6 +1242,7 @@ drawable search_new
 drawable select_action_backround
 drawable small_button
 drawable small_screen_upsidedown
+drawable sport_type
 drawable start
 drawable text_view_to_fill
 drawable text_view_to_fill2
@@ -1272,6 +1279,7 @@ id PhotoButtun
 id SHIFT
 id SYM
 id ShowText
+id SpotsTypeLayout
 id accept
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1374,7 +1382,9 @@ id chatView
 id checkbox
 id checked
 id chronometer
+id cityLayout
 id city_editText
+id city_icon
 id city_scroll
 id city_textView
 id clip_horizontal
@@ -1475,7 +1485,9 @@ id masked
 id maxPlayers_textView
 id max_Players
 id max_age
+id max_ageLayout
 id max_age_fill
+id max_age_icon
 id max_age_text
 id max_age_text_view
 id media_actions
@@ -1483,7 +1495,9 @@ id message
 id middle
 id min_Age_text
 id min_age
+id min_ageLayout
 id min_age_fill
+id min_age_icon
 id min_age_text_view
 id mini
 id msg_input
@@ -1523,6 +1537,8 @@ id passwordConfrim
 id passwordFailed
 id payment
 id payment2
+id paymentLayout
+id payment_icon
 id percent
 id pin
 id place_autocomplete_clear_button
@@ -1586,6 +1602,7 @@ id spacer
 id split_action_bar
 id sport
 id sport_type_button
+id sport_type_icon
 id sport_type_scroll
 id sports_button
 id spread
