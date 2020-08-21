@@ -1126,6 +1126,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable accepticon
 drawable accepticon2
+drawable activity_name
 drawable avd_hide_password
 drawable avd_show_password
 drawable baby
@@ -1173,6 +1174,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable details
 drawable dollar
 drawable edit
 drawable email
@@ -1181,6 +1183,7 @@ drawable eye2x
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable grenn_image_circlr
+drawable group
 drawable ic_accept
 drawable ic_action_name
 drawable ic_add_a_photo_black_24dp
@@ -1276,6 +1279,7 @@ id EmailLayout
 id FUNCTION
 id GroupImage
 id META
+id MaxPlayersLayout
 id NameLayout
 id PassworConfirmdLayout
 id PasswordLayout
@@ -1284,6 +1288,7 @@ id SHIFT
 id SYM
 id ShowText
 id SpotsTypeLayout
+id SpotsTypeLayout1
 id accept
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1337,8 +1342,10 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activityNameLayout
 id activity_chooser_view_content
 id activity_description
+id activity_name_icon
 id activity_name_layout
 id add
 id adjust_height
@@ -1387,8 +1394,10 @@ id checkbox
 id checked
 id chronometer
 id cityLayout
+id cityLayout1
 id city_editText
 id city_icon
+id city_icon1
 id city_scroll
 id city_textView
 id clip_horizontal
@@ -1406,6 +1415,7 @@ id decline
 id decor_content_parent
 id default_activity_button
 id deleteButton
+id descriptionLayout
 id descriptionToFill
 id description_details_1
 id description_textView
@@ -1414,6 +1424,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id details_icon
 id details_to_fill
 id dialog_button
 id dimensions
@@ -1446,6 +1457,7 @@ id ghost_view
 id glide_custom_view_target_tag
 id gone
 id group_divider
+id group_icon
 id groups
 id home
 id homeAsUp
@@ -1490,6 +1502,7 @@ id max_age
 id max_ageLayout
 id max_age_fill
 id max_age_icon
+id max_age_icon1
 id max_age_text
 id max_age_text_view
 id media_actions
@@ -1498,8 +1511,10 @@ id middle
 id min_Age_text
 id min_age
 id min_ageLayout
+id min_ageLayout1
 id min_age_fill
 id min_age_icon
+id min_age_icon1
 id min_age_text_view
 id mini
 id msg_input
@@ -1539,7 +1554,9 @@ id passwordFailed
 id payment
 id payment2
 id paymentLayout
+id paymentLayout1
 id payment_icon
+id payment_icon1
 id percent
 id pin
 id place_autocomplete_clear_button
@@ -1604,6 +1621,7 @@ id split_action_bar
 id sport
 id sport_type_button
 id sport_type_icon
+id sport_type_icon1
 id sport_type_scroll
 id sports_button
 id spread

@@ -14,29 +14,45 @@
         android:layout_height="500dp"
         tools:context=".registration">
 
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTextView"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+        <RelativeLayout
+            android:id="@+id/cityLayout1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="8dp"
             android:background="@drawable/text_view_to_fill"
-            android:hint="City"
-            android:layout_centerVertical="true"
-            android:layout_weight="1"
-            android:fontFamily="@font/segoe_ui"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="20sp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/max_age"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/max_ageLayout">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/city_icon1"
+                android:layout_weight="1"
+                android:background="@drawable/text_view_to_fill"
+                android:fontFamily="@font/segoe_ui"
+                android:hint="City"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/city_icon1"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/city" />
+        </RelativeLayout>
+
+
+
 
         <Button
             android:id="@+id/find_activities"
@@ -54,168 +70,270 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/payment" />
+            app:layout_constraintTop_toBottomOf="@+id/paymentLayout1" />
 
-        <Button
-            android:id="@+id/sport_type_button"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+        <RelativeLayout
+            android:id="@+id/SpotsTypeLayout1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/text_view_to_fill"
-            android:hint="Sport's Type"
-            android:layout_centerVertical="true"
-            android:layout_weight="1"
-            android:fontFamily="@font/segoe_ui"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="20sp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/password" />
+            app:layout_constraintTop_toBottomOf="@+id/activityNameLayout">
 
-        <CheckBox
-            android:id="@+id/payment"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            <Button
+                android:id="@+id/sport_type_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/sport_type_icon1"
+                android:layout_weight="1"
+                android:background="@drawable/text_view_to_fill"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="left|center_vertical"
+                android:hint="Sport's Type"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/sport_type_icon1"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/sport_type" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/paymentLayout1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/text_view_to_fill"
-            android:hint="Payment"
-            android:layout_centerVertical="true"
-            android:layout_weight="1"
-            android:fontFamily="@font/segoe_ui"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="20sp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.588"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descriptionToFill" />
+            app:layout_constraintTop_toBottomOf="@+id/descriptionLayout">
 
-        <EditText
-            android:id="@+id/max_Players"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            <CheckBox
+                android:id="@+id/payment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/payment_icon1"
+                android:layout_weight="1"
+                android:background="@drawable/text_view_to_fill"
+                android:fontFamily="@font/segoe_ui"
+                android:hint="Payment"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/payment_icon1"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/dollar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/MaxPlayersLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/text_view_to_fill"
-            android:ems="10"
-            android:hint="Maximum Players"
-            android:layout_centerVertical="true"
-            android:layout_weight="1"
-            android:fontFamily="@font/segoe_ui"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="20sp"
-            android:inputType="textPersonName"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/cityLayout1">
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            <EditText
+                android:id="@+id/max_Players"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/group_icon"
+                android:layout_weight="1"
+                android:background="@drawable/text_view_to_fill"
+                android:fontFamily="@font/segoe_ui"
+                android:hint="Maximum Players"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/group_icon"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/group" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activityNameLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="80dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/text_view_to_fill"
-            android:ems="10"
-            android:hint="Name"
-            android:layout_centerVertical="true"
-            android:layout_weight="1"
-            android:fontFamily="@font/segoe_ui"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="20sp"
-            android:inputType="textPersonName"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/descriptionToFill"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/activity_name_icon"
+                android:layout_weight="1"
+                android:background="@drawable/text_view_to_fill"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="left|center_vertical"
+                android:hint="Activity Name"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/activity_name_icon"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/activity_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/descriptionLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/text_view_to_fill"
-            android:ems="10"
-            android:paddingStart="2dp"
-            android:paddingEnd="2dp"
-            android:hint="Description and additional details"
-            android:layout_centerVertical="true"
-            android:layout_weight="1"
-            android:fontFamily="@font/segoe_ui"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="18sp"
-            android:inputType="textPersonName"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/max_Players" />
+            app:layout_constraintTop_toBottomOf="@+id/cityLayout1">
 
-        <EditText
-            android:id="@+id/min_age"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
+            <EditText
+                android:id="@+id/descriptionToFill"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/details_icon"
+                android:layout_weight="1"
+                android:background="@drawable/text_view_to_fill"
+                android:fontFamily="@font/segoe_ui"
+                android:hint="Description and Details"
+                android:inputType="textPersonName"
+                android:paddingStart="4dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/details_icon"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/details" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/min_ageLayout1"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/text_view_to_fill"
-            android:ems="10"
-            android:hint="Minimal Age"
-            android:layout_centerVertical="true"
-            android:layout_weight="1"
-            android:fontFamily="@font/segoe_ui"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="20sp"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/max_ageLayout"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sport_type_button" />
+            app:layout_constraintTop_toBottomOf="@+id/SpotsTypeLayout1">
 
-        <EditText
-            android:id="@+id/max_age"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="32dp"
+            <EditText
+                android:id="@+id/min_age"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/min_age_icon1"
+                android:layout_weight="1"
+                android:background="@drawable/text_view_to_fill"
+                android:fontFamily="@font/segoe_ui"
+                android:hint="Minimal Age"
+                android:inputType="textPersonName"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/min_age_icon1"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/baby" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/max_ageLayout"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
             android:background="@drawable/text_view_to_fill"
-            android:ems="10"
-            android:hint="Maximal Age"
-            android:layout_centerVertical="true"
-            android:layout_weight="1"
-            android:fontFamily="@font/segoe_ui"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="20sp"
-            android:inputType="textPersonName"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/min_age" />
+            app:layout_constraintStart_toEndOf="@+id/min_ageLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/SpotsTypeLayout1">
 
+            <EditText
+                android:id="@+id/max_age"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/max_age_icon1"
+                android:layout_weight="1"
+                android:background="@drawable/text_view_to_fill"
+                android:fontFamily="@font/segoe_ui"
+                android:hint="Maximal Age"
+                android:inputType="textPersonName"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/max_age_icon1"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/person" />
+        </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
