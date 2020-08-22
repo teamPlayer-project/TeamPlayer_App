@@ -80,7 +80,7 @@ public class activity_details extends AppCompatActivity {
         isRequestSend=false;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mAuth = FirebaseAuth.getInstance();
-        setTitle(activity_name + " activity details");
+        setTitle(activity_name);
         //get the manager email
         DocumentReference userNAme = db.collection("Activities").document(activity_name);
         userNAme.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -164,7 +164,7 @@ public class activity_details extends AppCompatActivity {
                         lon = (String)document.get("lon");
                         if (lat.equals("")){
                             locationButton.setClickable(false);
-                            locationButton.setText("No location");
+                            locationButton.setText("No Location");
                         }
                         showDetails();
                     } else {

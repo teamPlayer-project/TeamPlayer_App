@@ -40,6 +40,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.activityViewHolder
     private static final String TAG = "PostDetailActivity";
 
 
+
     /**
      * Interface that has a function: "onInfoClick"
      */
@@ -65,6 +66,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.activityViewHolder
         public TextView mTextView1;
         public TextView mTextView2;
         public ImageView mInfoImage;
+        public ImageView requestIcon;
         public View view;
 
         /**
@@ -78,6 +80,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.activityViewHolder
             mTextView1 = itemView.findViewById(R.id.textView);
             mTextView2 = itemView.findViewById(R.id.activity_description);
             mInfoImage = itemView.findViewById(R.id.image_info);
+            requestIcon = itemView.findViewById(R.id.request);
             view=itemView;
 
 
@@ -95,12 +98,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.activityViewHolder
             });
         }
 
-        /**
-         * Set the background to yellow
-         */
-        public void setBackGround(){
-            view.setBackground(ContextCompat.getDrawable(ApplicationClass.getAppContext(),R.drawable.text_view_to_fill2) );
-        }
     }
 
     /**
@@ -186,10 +183,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.activityViewHolder
                     String splitName[] = currentItem.getActivityName().split(" ");
                     String isManagerOrNot = splitName[splitName.length - 1];
                     if (currentItem.isManager() && isManagerOrNot.equals("(MANAGER)")){
-                        //Show manager new requests are pending and change activity color
-                        String textToShow=currentItem.getActivityName()+" -New pending requests";
-                        holder.mTextView1.setText(textToShow);
-                        holder.setBackGround();
+                        //Show manager new requests are pending
+                        holder.requestIcon.setImageResource(R.drawable.ic_requesst);
 
                     }
                 }
@@ -220,9 +215,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.activityViewHolder
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()){
-                    //Show the user the request is waiting for approval and change activity color
+                    //Show the user the request is waiting for approval
                     holder.mTextView1.setText(currentItem.getActivityName() + " - Waiting for approval");
-                    holder.setBackGround();
                 }
             }
 

@@ -90,6 +90,7 @@
             android:background="@drawable/select_action_backround"
             android:text="Ask To Join"
             android:textColor="#FFFFFF"
+            android:fontFamily="@font/segoe_ui_bold"
             android:textSize="21dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

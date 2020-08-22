@@ -109,18 +109,18 @@ public final class R {
         public static final int common_google_signin_btn_text_light_normal_background = 0x7f080081;
         public static final int googleg_disabled_color_18 = 0x7f080094;
         public static final int googleg_standard_color_18 = 0x7f080095;
-        public static final int notification_action_background = 0x7f0800c0;
-        public static final int notification_bg = 0x7f0800c1;
-        public static final int notification_bg_low = 0x7f0800c2;
-        public static final int notification_bg_low_normal = 0x7f0800c3;
-        public static final int notification_bg_low_pressed = 0x7f0800c4;
-        public static final int notification_bg_normal = 0x7f0800c5;
-        public static final int notification_bg_normal_pressed = 0x7f0800c6;
-        public static final int notification_icon_background = 0x7f0800c7;
-        public static final int notification_template_icon_bg = 0x7f0800c8;
-        public static final int notification_template_icon_low_bg = 0x7f0800c9;
-        public static final int notification_tile_bg = 0x7f0800ca;
-        public static final int notify_panel_notification_icon_bg = 0x7f0800cb;
+        public static final int notification_action_background = 0x7f0800c1;
+        public static final int notification_bg = 0x7f0800c2;
+        public static final int notification_bg_low = 0x7f0800c3;
+        public static final int notification_bg_low_normal = 0x7f0800c4;
+        public static final int notification_bg_low_pressed = 0x7f0800c5;
+        public static final int notification_bg_normal = 0x7f0800c6;
+        public static final int notification_bg_normal_pressed = 0x7f0800c7;
+        public static final int notification_icon_background = 0x7f0800c8;
+        public static final int notification_template_icon_bg = 0x7f0800c9;
+        public static final int notification_template_icon_low_bg = 0x7f0800ca;
+        public static final int notification_tile_bg = 0x7f0800cb;
+        public static final int notify_panel_notification_icon_bg = 0x7f0800cc;
     }
     public static final class id {
         private id() {}

@@ -14,7 +14,7 @@
         android:id="@+id/image_info"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_alignParentTop="true"
+
         android:layout_alignParentEnd="true"
         android:src="@drawable/ic_goto_activity"
         android:layout_marginLeft="5dp"
@@ -26,24 +26,26 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_gravity="center_vertical"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="-315dp"
+        android:layout_marginLeft="6dp"
         android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
         android:layout_toLeftOf="@+id/image_info"
         android:layout_toEndOf="@+id/image_info"
         android:layout_toRightOf="@+id/imageView"
+        android:ellipsize="end"
         android:fontFamily="@font/segoe_ui"
+        android:maxLines="1"
         android:text="Line 2"
         android:textColor="#7B7B7B"
-        android:textSize="15sp"
-        android:maxLines="1"
-        android:ellipsize="end"/>
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="18dp"
@@ -51,10 +53,9 @@
         android:layout_toRightOf="@+id/imageView"
         android:fontFamily="@font/segoe_ui_bold"
         android:maxWidth="270dp"
-        android:layout_centerVertical="true"
         android:text="Line 1"
         android:textColor="#145202"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -66,5 +67,15 @@
         app:civ_border_color="#145202"
         app:civ_border_width="2dp" />
 
+    <ImageView
+        android:id="@+id/request"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="0dp"
+        android:src="@color/common_google_signin_btn_text_dark_default" />
 
 </RelativeLayout>
