@@ -1400,7 +1400,6 @@ id city_editText
 id city_icon
 id city_icon1
 id city_scroll
-id city_textView
 id clip_horizontal
 id clip_vertical
 id collapseActionView
@@ -1419,7 +1418,6 @@ id deleteButton
 id descriptionLayout
 id descriptionToFill
 id description_details_1
-id description_textView
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1497,7 +1495,6 @@ id logo
 id manager_recyclerView
 id map
 id masked
-id maxPlayers_textView
 id max_Players
 id max_age
 id max_ageLayout
@@ -1505,7 +1502,6 @@ id max_age_fill
 id max_age_icon
 id max_age_icon1
 id max_age_text
-id max_age_text_view
 id media_actions
 id message
 id middle
@@ -1516,7 +1512,6 @@ id min_ageLayout1
 id min_age_fill
 id min_age_icon
 id min_age_icon1
-id min_age_text_view
 id mini
 id msg_input
 id mtrl_child_content_container
