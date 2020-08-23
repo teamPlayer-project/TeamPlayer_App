@@ -28,20 +28,21 @@
             app:layout_constraintTop_toBottomOf="@+id/descriptionLayout" />
 
 
-
         <RelativeLayout
             android:id="@+id/min_ageLayout"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_width="144dp"
+            android:layout_height="43dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="80dp"
 
             android:background="@drawable/text_view_to_fill"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/max_ageLayout"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
 
             <EditText
                 android:id="@+id/min_age_fill"
@@ -58,13 +59,14 @@
                 android:textColor="@android:color/background_dark"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:textSize="18sp" />
+
             <ImageView
                 android:id="@+id/min_age_icon1"
                 android:layout_width="40dp"
                 android:layout_height="17dp"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/baby" />
-         </RelativeLayout>
+        </RelativeLayout>
 
 
         <RelativeLayout
@@ -107,17 +109,17 @@
 
         <RelativeLayout
             android:id="@+id/max_ageLayout"
-            android:layout_width="300dp"
+            android:layout_width="147dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="80dp"
 
+            android:layout_marginEnd="32dp"
             android:background="@drawable/text_view_to_fill"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/min_ageLayout">
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/min_ageLayout"
+            app:layout_constraintTop_toTopOf="parent">
 
             <EditText
                 android:id="@+id/max_age_fill"
@@ -143,9 +145,6 @@
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/person" />
         </RelativeLayout>
-
-
-
 
         <RelativeLayout
             android:id="@+id/MaxPlayersLayout"
