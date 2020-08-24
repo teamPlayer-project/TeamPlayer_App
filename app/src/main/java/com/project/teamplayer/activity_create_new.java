@@ -70,7 +70,7 @@ public class activity_create_new extends AppCompatActivity {
         buttonSportType = (Button) findViewById(R.id.sport_type_button);
 
         buttonSportType.setText(sportThatChosen);
-        setTitle("Create a New Activity");
+        setTitle("Create New Activity");
         loadCities();
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
                 (this, android.R.layout.select_dialog_item, cities);

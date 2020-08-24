@@ -41,7 +41,7 @@ public class user_activities extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_activities);
-        setTitle("my activities");
+        setTitle("My Activities");
         searchForActivities();
     }
 

@@ -200,7 +200,7 @@
 
             <EditText
                 android:id="@+id/edit_description"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/details_icon"
@@ -210,9 +210,12 @@
                 android:hint="Description and Details"
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:textColor="@android:color/background_dark"
                 android:textColorHint="@color/colorPrimaryDark"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <ImageView
                 android:id="@+id/details_icon"

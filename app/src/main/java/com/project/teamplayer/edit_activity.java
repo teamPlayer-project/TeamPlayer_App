@@ -73,7 +73,7 @@ public class edit_activity extends AppCompatActivity {
                 }
             }
         });
-        setTitle("edit activity " + activityName);
+        setTitle("Edit Activity " + activityName);
 
     }
 
