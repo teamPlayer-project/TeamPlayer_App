@@ -61,6 +61,7 @@ public class select_action extends AppCompatActivity {
         imageUser = (ImageView) findViewById(R.id.profile_image);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         final String userEmail = FirebaseAuth.getInstance().getCurrentUser().getEmail();
         try {
             storage.getReference("uploads/" + userEmail).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {

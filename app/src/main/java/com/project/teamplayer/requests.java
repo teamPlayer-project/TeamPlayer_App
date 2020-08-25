@@ -44,6 +44,7 @@ public class requests extends AppCompatActivity {
         requestList = new ArrayList<>();
         backTO = getIntent().getStringExtra("GOT_FROM");
         Log.d("manager_request", backTO);
+        setTitle("Requests");
         listView = (ListView) findViewById(R.id.listView);
         activity_name = getIntent().getStringExtra("activity_name");
         description = getIntent().getStringExtra("DESCRIPTION");

@@ -200,11 +200,10 @@
 
             <EditText
                 android:id="@+id/edit_description"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/details_icon"
-                android:layout_weight="1"
                 android:background="@drawable/text_view_to_fill"
                 android:fontFamily="@font/segoe_ui"
                 android:hint="Description and Details"
@@ -215,6 +214,7 @@
                 android:textColor="@android:color/background_dark"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:textSize="20sp"
+                android:layout_marginRight="3dp"
                 />
 
             <ImageView

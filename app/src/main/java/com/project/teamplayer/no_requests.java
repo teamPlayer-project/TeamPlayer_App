@@ -23,7 +23,7 @@ public class no_requests extends AppCompatActivity {
         backTo = getIntent().getStringExtra("GOT_FROM");
         //Display back arrow on action bar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle("My Requests");
+        setTitle("Requests");
     }
 
 
