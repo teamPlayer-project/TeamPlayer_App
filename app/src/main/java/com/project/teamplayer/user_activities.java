@@ -64,7 +64,7 @@ public class user_activities extends AppCompatActivity {
                         if(task.isSuccessful()){
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 activitiesNamesFound.add(document.get("activityName").toString());
-                                descriptionsFound.add(document.get("description").toString());
+                                descriptionsFound.add(document.get("city").toString());
                                 managerFound.add(document.get("manager_email").toString());
                             }
                             showOnscroll();

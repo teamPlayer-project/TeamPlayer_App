@@ -28,7 +28,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginStart="-315dp"
         android:layout_marginLeft="6dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="3dp"
         android:layout_toLeftOf="@+id/image_info"
         android:layout_toEndOf="@+id/image_info"
