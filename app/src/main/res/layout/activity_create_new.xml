@@ -40,7 +40,7 @@
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="20sp" />
 
             <ImageView
@@ -99,7 +99,7 @@
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="20sp" />
 
             <ImageView
@@ -137,7 +137,7 @@
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="20sp" />
 
             <ImageView
@@ -174,7 +174,7 @@
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="20sp" />
 
             <ImageView
@@ -215,7 +215,7 @@
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="20sp" />
 
             <ImageView
@@ -252,7 +252,7 @@
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="20sp" />
 
             <ImageView
@@ -265,7 +265,7 @@
 
         <RelativeLayout
             android:id="@+id/min_ageLayout1"
-            android:layout_width="147dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="24dp"
@@ -284,12 +284,12 @@
                 android:layout_weight="1"
                 android:background="@drawable/text_view_to_fill"
                 android:fontFamily="@font/segoe_ui"
-                android:hint="Minimal Age"
+                android:hint="Min Age"
                 android:inputType="textPersonName"
                 android:paddingStart="1dp"
                 android:paddingEnd="1dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="18sp" />
 
             <ImageView
@@ -303,10 +303,10 @@
 
         <RelativeLayout
             android:id="@+id/max_ageLayout"
-            android:layout_width="147dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="30dp"
             android:background="@drawable/text_view_to_fill"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -322,12 +322,12 @@
                 android:layout_weight="1"
                 android:background="@drawable/text_view_to_fill"
                 android:fontFamily="@font/segoe_ui"
-                android:hint="Maximal Age"
+                android:hint="Max Age"
                 android:inputType="textPersonName"
                 android:paddingStart="1dp"
                 android:paddingEnd="1dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="18sp" />
 
             <ImageView

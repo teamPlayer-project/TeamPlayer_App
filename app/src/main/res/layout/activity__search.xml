@@ -40,7 +40,7 @@
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="20sp" />
 
             <ImageView
@@ -98,7 +98,7 @@
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="20sp" />
 
             <ImageView
@@ -136,7 +136,7 @@
                 android:inputType="textPersonName"
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="20sp" />
 
             <ImageView
@@ -150,14 +150,13 @@
 
         <RelativeLayout
             android:id="@+id/min_ageLayout"
-            android:layout_width="145dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="24dp"
             android:background="@drawable/text_view_to_fill"
             android:orientation="horizontal"
             app:layout_constraintEnd_toStartOf="@+id/max_ageLayout"
-            app:layout_constraintHorizontal_bias="0.648"
+            app:layout_constraintHorizontal_bias="0.65"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/SpotsTypeLayout">
 
@@ -170,12 +169,12 @@
                 android:layout_weight="1"
                 android:background="@drawable/text_view_to_fill"
                 android:fontFamily="@font/segoe_ui"
-                android:hint="Min. Age"
+                android:hint="Min Age"
                 android:inputType="textPersonName"
                 android:paddingStart="1dp"
                 android:paddingEnd="1dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="18sp" />
 
             <ImageView
@@ -188,10 +187,10 @@
 
         <RelativeLayout
             android:id="@+id/max_ageLayout"
-            android:layout_width="145dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="52dp"
+            android:layout_marginEnd="53dp"
             android:background="@drawable/text_view_to_fill"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -199,19 +198,21 @@
 
             <EditText
                 android:id="@+id/max_age_text"
+
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
                 android:layout_toEndOf="@+id/max_age_icon"
                 android:layout_weight="1"
                 android:background="@drawable/text_view_to_fill"
                 android:fontFamily="@font/segoe_ui"
-                android:hint="Max. Age"
+                android:hint="Max Age"
                 android:inputType="textPersonName"
                 android:paddingStart="1dp"
                 android:paddingEnd="1dp"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
                 android:textSize="18sp" />
 
             <ImageView
