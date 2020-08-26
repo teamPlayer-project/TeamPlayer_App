@@ -34,6 +34,7 @@ public class user_activities extends AppCompatActivity {
     ArrayList<String> activitiesNamesFound = new ArrayList<>();
     ArrayList<String> descriptionsFound = new ArrayList<>();
     ArrayList<String> managerFound = new ArrayList<>();
+    ArrayList<String> cityFound = new ArrayList<>();
     private FirebaseStorage storage;
     private StorageReference storageReference;
 
@@ -64,7 +65,8 @@ public class user_activities extends AppCompatActivity {
                         if(task.isSuccessful()){
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 activitiesNamesFound.add(document.get("activityName").toString());
-                                descriptionsFound.add(document.get("city").toString());
+                                descriptionsFound.add(document.get("description").toString());
+                                cityFound.add(document.get("city").toString());
                                 managerFound.add(document.get("manager_email").toString());
                             }
                             showOnscroll();
@@ -100,7 +102,7 @@ public class user_activities extends AppCompatActivity {
             }
 
             //String userUid = FirebaseAuth.getInstance().getCurrentUser().getUid();
-            mActivitiesList.add(new ActivityItems(activityNameNoChanges, R.drawable.project_logo, activityNameToShow, descriptionsFound.get(i),isManager));
+            mActivitiesList.add(new ActivityItems(activityNameNoChanges, R.drawable.project_logo, activityNameToShow, cityFound.get(i),isManager));
         }
         buildRecyclerView();
     }
