@@ -253,7 +253,8 @@
                 android:paddingStart="4dp"
                 android:textColor="@android:color/background_dark"
                 android:textColorHint="#808080"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:maxLength="70"/>
 
             <ImageView
                 android:id="@+id/details_icon"

@@ -12,6 +12,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -63,7 +64,6 @@ public class registration extends AppCompatActivity {
         password.setTransformationMethod(PasswordTransformationMethod.getInstance());
         EditText passwordAgain= (EditText) findViewById(R.id.passwordConfrim);
         passwordAgain.setTransformationMethod(PasswordTransformationMethod.getInstance());
-        getSupportActionBar().hide();
         setTitle("Registration");
         chooseDate();
     }
@@ -276,6 +276,17 @@ public class registration extends AppCompatActivity {
     public void backButton(View view){
         Intent intent=new Intent(this,activity_Login.class);
         startActivity(intent);
+    }
+
+    /**
+     * The function go back to the previous screen when arrow bar is pressed
+     * @param item
+     * @return
+     */
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent=new Intent(this,activity_Login.class);
+        startActivity(intent);
+        return true;
     }
 }
 

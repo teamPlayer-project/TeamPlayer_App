@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/little_screen"
+    android:background="@drawable/background"
     android:gravity="center"
     tools:context=".no_result">
 
@@ -15,37 +15,42 @@
 
         <Button
             android:id="@+id/button14"
-            android:layout_width="143dp"
-            android:layout_height="133dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:background="@drawable/try_again_new"
+            android:background="@drawable/select_action_backround"
             android:onClick="tryAgain"
-            android:textColor="@android:color/background_light"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textColor="#FFFFFF"
             android:textSize="24sp"
+            android:text="TRY AGAIN"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
+
 
         <TextView
             android:id="@+id/textView13"
-            android:layout_width="281dp"
-            android:layout_height="99dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="192dp"
-            android:layout_marginEnd="8dp"
-            android:fontFamily="@font/lato_regular"
+            android:layout_width="300dp"
+            android:layout_height="62dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="176dp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:gravity="center"
             android:padding="5dp"
             android:text="No Results Found"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="#012d8c"
-            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

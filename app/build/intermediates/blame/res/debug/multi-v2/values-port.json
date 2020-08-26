@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Shahar Barkol\\StudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "outputFile": "C:\\Users\\avib\\AndroidStudioProjects\\TeamPlayer_App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Shahar Barkol\\.gradle\\caches\\transforms-2\\files-2.1\\6ac147c4b6065b567d3ad621905c41a9\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\avib\\.gradle\\caches\\transforms-2\\files-2.1\\8a082d4283150b845ccf47da3ba5972c\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
