@@ -63,6 +63,7 @@ public class manager extends AppCompatActivity {
     String description;
     String documentActivityName;
     private ArrayList<participants_Items> mParticipantsList;
+    private String numOfParticipants;
     //private ArrayList<String> emailsList = new ArrayList<>();
     String emailToDelete;
     private ImageView groupImage;
@@ -373,6 +374,15 @@ public class manager extends AppCompatActivity {
                                                             mParticipantsList.add(new participants_Items(participantsEmail, R.drawable.project_logo, name, "Age: " + String.valueOf(age)));
                                                         }
 
+                                                    }
+                                                    Log.d(TAG, "read list OK");
+                                                    numOfParticipants = String.valueOf(mParticipantsList.size());
+                                                    Log.d(TAG, "Number of participants is: " + numOfParticipants);
+                                                    TextView numParticipants = (TextView) findViewById(R.id.partsNum);
+                                                    if (numOfParticipants.equals("1")){
+                                                        numParticipants.setText(" " + numOfParticipants + " Participant");
+                                                    } else {
+                                                        numParticipants.setText(" " + numOfParticipants + " Participants");
                                                     }
                                                     buildRecyclerView();
                                                 } else {

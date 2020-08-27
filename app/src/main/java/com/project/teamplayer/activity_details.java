@@ -138,7 +138,12 @@ public class activity_details extends AppCompatActivity {
         TextView descriptionToShow = (TextView) findViewById(R.id.description_details_1);
         descriptionToShow.setText(detailsList.get(1));
         TextView participantsNumToShow = (TextView) findViewById(R.id.number_of_participations);
-        String particNum = "Number Of Participants: " + detailsList.get(2);
+        String particNum = "";
+        if (detailsList.get(2).equals("1")){
+            particNum = detailsList.get(2) + " Participant";
+        } else {
+            particNum = detailsList.get(2) + " Participants";
+        }
         participantsNumToShow.setText(particNum);
         TextView ageRangeToShow = (TextView)findViewById(R.id.age_Range_textView);
         String ageRangeDetails = "Age Range: " + ageRange;

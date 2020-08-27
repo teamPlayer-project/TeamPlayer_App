@@ -19,7 +19,6 @@
             android:layout_width="410dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/button_join_request"
-            android:layout_alignParentBottom="true"
             android:background="@drawable/pariticipants_background"
             android:layout_marginTop="35dp"
             android:padding="4dp"
@@ -180,30 +179,30 @@
 
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/partsLine"
             android:layout_width="wrap_content"
             android:layout_height="2dp"
-            android:layout_alignTop="@+id/textView4"
+            android:layout_below="@+id/button_join_request"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="23dp"
             android:layout_marginEnd="0dp"
             android:background="#115496" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/partsNum"
             android:layout_width="wrap_content"
-            android:layout_height="24dp"
+            android:layout_height="27dp"
             android:layout_below="@+id/button_join_request"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="150dp"
+            android:layout_marginStart="134dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:fontFamily="@font/segoe_ui_bold"
-            android:text=" Participants"
+            android:layout_marginEnd="134dp"
             android:background="#EBF5FF"
+            android:gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/segoe_ui_bold"
             android:textColor="#115496"
             android:textSize="18dp" />
 

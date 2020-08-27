@@ -49,6 +49,7 @@ public class group extends AppCompatActivity {
     String description;
     View getView;
     private ArrayList<participants_Items> mParticipantsList;
+    private String numOfParticipants;
     private ImageView groupImage;
     private FirebaseStorage storage;
     private StorageReference storageReference;
@@ -247,6 +248,11 @@ public class group extends AppCompatActivity {
                                                             //String userRecord = FirebaseAuth.getInstance().getUserByEmail(participantsEmail);
                                                             mParticipantsList.add(new participants_Items(participantsEmail, R.drawable.project_logo, name, "Age: " + String.valueOf(age)));
                                                         }
+                                                        Log.d(TAG, "read list OK");
+                                                        numOfParticipants = String.valueOf(mParticipantsList.size());
+                                                        Log.d(TAG, "Number of participants is: " + numOfParticipants);
+                                                        TextView numParticipants = (TextView) findViewById(R.id.participantsNum);
+                                                        numParticipants.setText(" " + numOfParticipants + " Participants");
                                                         buildRecyclerView();
                                                     }
                                                 } else {

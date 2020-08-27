@@ -1483,6 +1483,7 @@ id left
 id light
 id line1
 id line3
+id lineParts
 id listMode
 id listView
 id list_item
@@ -1544,6 +1545,9 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id participantsNum
+id partsLine
+id partsNum
 id password
 id passwordConfrim
 id passwordFailed
@@ -1650,9 +1654,6 @@ id textView
 id textView13
 id textView2
 id textView3
-id textView4
-id textView5
-id textView6
 id textView9
 id textView_par
 id text_input_password_toggle
